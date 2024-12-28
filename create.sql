@@ -1,0 +1,15 @@
+create table ability (api_id integer, id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB;
+create table item (api_id integer, id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB;
+create table move (accuracy integer, api_id integer, power integer, pp integer, id bigint not null auto_increment, type_id bigint, name varchar(255), primary key (id)) engine=InnoDB;
+create table pokemon (api_id integer, base_experience integer, height integer, weight integer, id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB;
+create table pokemon_abilities (abilities_id bigint not null, pokemon_id bigint not null) engine=InnoDB;
+create table pokemon_moves (moves_id bigint not null, pokemon_id bigint not null) engine=InnoDB;
+create table pokemon_types (pokemon_id bigint not null, types_id bigint not null) engine=InnoDB;
+create table type (api_id integer, id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB;
+alter table move add constraint FKm752v1lw4h2m9rbjl923y35o8 foreign key (type_id) references type (id);
+alter table pokemon_abilities add constraint FKi2j52hdb6cg5c4uwfk7hsfmi4 foreign key (abilities_id) references ability (id);
+alter table pokemon_abilities add constraint FKd4e0nwtlcear2rebo3kh7pqkp foreign key (pokemon_id) references pokemon (id);
+alter table pokemon_moves add constraint FKbqawqxii6j0ylbw7n5fwn8u4r foreign key (moves_id) references move (id);
+alter table pokemon_moves add constraint FK39kw2ij1hox9c14g5sinxrt8j foreign key (pokemon_id) references pokemon (id);
+alter table pokemon_types add constraint FKn7hpi4p9jx1jxe0k0unc7exad foreign key (types_id) references type (id);
+alter table pokemon_types add constraint FK2mg61es8piwhjsf2184rqxf1y foreign key (pokemon_id) references pokemon (id);
