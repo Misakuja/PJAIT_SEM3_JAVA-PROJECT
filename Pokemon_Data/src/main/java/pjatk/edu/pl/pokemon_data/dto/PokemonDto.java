@@ -1,16 +1,14 @@
 package pjatk.edu.pl.pokemon_data.dto;
-
 import java.util.List;
 
 public record PokemonDto(
-        Long id,
-        Integer apiId,
+        Long databaseId,
+        Integer id,
         String name,
         Integer height,
         Integer weight,
-        Integer baseExperience,
+        Integer base_experience,
         List<TypeDto> types,
         List<AbilityDto> abilities,
         List<MoveDto> moves
-
-){}
+) {}
