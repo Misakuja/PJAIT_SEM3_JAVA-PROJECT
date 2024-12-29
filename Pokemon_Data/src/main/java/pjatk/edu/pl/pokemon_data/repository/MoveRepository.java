@@ -6,4 +6,6 @@ import pjatk.edu.pl.pokemon_data.entity.Move;
 
 @Repository
 public interface MoveRepository extends JpaRepository<Move, Long> {
+    Move findByApiId(Integer id);
+
 }

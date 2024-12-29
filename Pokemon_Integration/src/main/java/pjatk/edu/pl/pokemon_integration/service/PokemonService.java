@@ -75,7 +75,17 @@ public class PokemonService {
     }
 
     private void savePokemon(PokemonDto dto) {
-        Pokemon pokemon = new Pokemon();
+        Pokemon existingPokemon = pokemonRepository.findByApiId(dto.id());
+
+        if (existingPokemon != null) {
+            setPokemonValues(dto, existingPokemon);
+        } else {
+            Pokemon pokemon = new Pokemon();
+            setPokemonValues(dto, pokemon);
+        }
+    }
+
+    private void setPokemonValues(PokemonDto dto, Pokemon pokemon) {
         pokemon.setApiId(dto.id());
         pokemon.setName(dto.name());
         pokemon.setHeight(dto.height());
@@ -102,14 +112,34 @@ public class PokemonService {
     }
 
     private void saveType(TypeDto dto) {
-        Type type = new Type();
+        Type existingType = typeRepository.findByApiId(dto.id());
+
+        if (existingType != null) {
+            setTypeValues(dto, existingType);
+        } else {
+            Type type = new Type();
+            setTypeValues(dto, type);
+        }
+    }
+
+    private void setTypeValues(TypeDto dto, Type type) {
         type.setApiId(dto.id());
         type.setName(dto.name());
         typeRepository.save(type);
     }
 
     private void saveMove(MoveDto dto) {
-        Move move = new Move();
+        Move existingMove = moveRepository.findByApiId(dto.id());
+
+        if (existingMove != null) {
+            setMoveValues(dto, existingMove);
+        } else {
+            Move move = new Move();
+            setMoveValues(dto, move);
+        }
+    }
+
+    private void setMoveValues(MoveDto dto, Move move) {
         move.setApiId(dto.id());
         move.setName(dto.name());
         move.setPower(dto.power());
@@ -119,14 +149,33 @@ public class PokemonService {
     }
 
     private void saveAbility(AbilityDto dto) {
-        Ability ability = new Ability();
+        Ability existingAbility = abilityRepository.findByApiId(dto.id());
+
+        if (existingAbility != null) {
+            setMoveValues(dto, existingAbility);
+        } else {
+            Ability ability = new Ability();
+            setMoveValues(dto, ability);
+        }
+    }
+
+    private void setMoveValues(AbilityDto dto, Ability ability) {
         ability.setApiId(dto.id());
         ability.setName(dto.name());
         abilityRepository.save(ability);
     }
 
     private void saveItem(ItemDto dto) {
-        Item item = new Item();
+        Item existingItem = itemRepository.findByApiId(dto.id());
+        if (existingItem != null) {
+            setItemValues(dto, existingItem);
+        } else {
+            Item item = new Item();
+            setItemValues(dto, item);
+        }
+    }
+
+    private void setItemValues(ItemDto dto, Item item) {
         item.setApiId(dto.id());
         item.setName(dto.name());
         itemRepository.save(item);

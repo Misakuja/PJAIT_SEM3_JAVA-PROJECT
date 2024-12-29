@@ -6,4 +6,5 @@ import pjatk.edu.pl.pokemon_data.entity.Item;
 
 @Repository
 public interface ItemRepository extends JpaRepository<Item, Long> {
+    Item findByApiId(Integer id);
 }

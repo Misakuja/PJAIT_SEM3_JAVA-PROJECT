@@ -6,4 +6,5 @@ import pjatk.edu.pl.pokemon_data.entity.Ability;
 
 @Repository
 public interface AbilityRepository extends JpaRepository<Ability, Long> {
+    Ability findByApiId(Integer apiId);
 }
