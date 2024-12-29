@@ -9,6 +9,7 @@ import pjatk.edu.pl.pokemon_data.entity.*;
 import pjatk.edu.pl.pokemon_data.repository.*;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 @Service
 public class PokemonService {
@@ -28,66 +29,49 @@ public class PokemonService {
         this.moveRepository = moveRepository;
         this.typeRepository = typeRepository;
     }
-
-//    @Cacheable(value = "pokemons", key = "#id")
-    public void fetchAndSavePokemons(int limit) {
+    //    @Cacheable(value = "pokemons", key = "#id")
+    public void fetchAndSavePokemons() {
         String url = "https://pokeapi.co/api/v2/pokemon/";
-        ResponseDto response = restTemplate.getForObject(url, ResponseDto.class);
+        fetchAndSave(url, PokemonDto.class, this::savePokemon);
+    }
+    //    @Cacheable(value = "types", key = "#id")
+    public void fetchAndSaveTypes() {
+        String url = "https://pokeapi.co/api/v2/type/";
+        fetchAndSave(url, TypeDto.class, this::saveType);
+    }
 
-        if (response != null) {
-            List<ResultDto> results = response.getResults();
-            for (ResultDto result : results) {
-                String pokemonUrl = result.getUrl();
-                PokemonDto pokemon = restTemplate.getForObject(pokemonUrl, PokemonDto.class);
-                if (pokemon != null) {
-                    savePokemon(pokemon);
+    public void fetchAndSaveMoves() {
+            String url = "https://pokeapi.co/api/v2/move/";
+            fetchAndSave(url, MoveDto.class, this::saveMove);
+    }
+
+    public void fetchAndSaveItems() {
+        String url = "https://pokeapi.co/api/v2/item/";
+        fetchAndSave(url, ItemDto.class, this::saveItem);
+    }
+
+    public void fetchAndSaveAbilities() {
+        String url = "https://pokeapi.co/api/v2/ability/";
+        fetchAndSave(url, AbilityDto.class, this::saveAbility);
+    }
+
+    private <T> void fetchAndSave(String url, Class<T> dtoClass, Consumer<T> saveMethod) {
+        ResponseDto response;
+        do {
+            response = restTemplate.getForObject(url, ResponseDto.class);
+
+            if (response != null) {
+                List<ResultDto> results = response.getResults();
+                for (ResultDto result : results) {
+                    String nextIndexUrl = result.getUrl();
+                    T item = restTemplate.getForObject(nextIndexUrl, dtoClass);
+                    if (item != null) {
+                        saveMethod.accept(item);
+                    }
                 }
             }
-        }
-    }
-//    @Cacheable(value = "types", key = "#id")
-    public void fetchAndSaveTypes(int limit) {
-        for (int i = 1; i <= limit; i++) {
-            String url = "https://pokeapi.co/api/v2/type/" + i;
-
-            TypeDto type = restTemplate.getForObject(url, TypeDto.class);
-            if (type != null) {
-                saveType(type);
-            }
-        }
-    }
-
-    public void fetchAndSaveMoves(int limit) {
-        for (int i = 1; i <= limit; i++) {
-            String url = "https://pokeapi.co/api/v2/move/" + i;
-
-            MoveDto move = restTemplate.getForObject(url, MoveDto.class);
-            if (move != null) {
-                saveMove(move);
-            }
-        }
-    }
-
-    public void fetchAndSaveAbilities(int limit) {
-        for (int i = 1; i <= limit; i++) {
-            String url = "https://pokeapi.co/api/v2/ability/" + i;
-
-            AbilityDto ability = restTemplate.getForObject(url, AbilityDto.class);
-            if (ability != null) {
-                saveAbility(ability);
-            }
-        }
-    }
-
-    public void fetchAndSaveItems(int limit) {
-        for (int i = 1; i <= limit; i++) {
-            String url = "https://pokeapi.co/api/v2/item/" + i;
-
-            ItemDto item = restTemplate.getForObject(url, ItemDto.class);
-            if (item != null) {
-                saveItem(item);
-            }
-        }
+            url = response.getNext();
+        } while (url != null);
     }
 
     private void savePokemon(PokemonDto dto) {

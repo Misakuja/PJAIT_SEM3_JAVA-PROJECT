@@ -5,43 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Data works, fetchAndSave works (scuffed due to weird names in dtos, but otherwise fine)">
-      <change afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/ResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dea79a8d-5c6a-4699-92b9-88ecdd3c759e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dea79a8d-5c6a-4699-92b9-88ecdd3c759e/storage_v2/_src_/schema/main_database.QZ2D8Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Pokemon_Data/PokeAPI.Pokemon_Data.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Pokemon_Data/PokeAPI.Pokemon_Data.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/AbilityDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/AbilityDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/ItemDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/ItemDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/MoveDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/MoveDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/PokemonDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/PokemonDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/TypeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/dto/TypeDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/AbilityDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/AbilityDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/ItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/ItemDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/MoveDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/MoveDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/dto/ResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/service/PokemonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/service/PokemonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/compileTransaction/stash-dir/PokemonIntegrationApplication.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/compileTransaction/stash-dir/PokemonIntegrationApplication.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/PokemonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +111,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pjatk.edu.pl.pokemon_data.dto" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.PokemonIntegrationApplication">
     <configuration name="APITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pjatk.edu.pl.pokemon_integration.APITest" />
@@ -201,7 +185,7 @@
       <workItem from="1735467678996" duration="23000" />
       <workItem from="1735467811876" duration="70000" />
       <workItem from="1735467899794" duration="6668000" />
-      <workItem from="1735481816301" duration="1473000" />
+      <workItem from="1735481816301" duration="5275000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -219,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735402668625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Data works, fetchAndSave works (scuffed due to weird names in dtos, but otherwise fine)">
+      <option name="closed" value="true" />
+      <created>1735485799112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735485799112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
