@@ -2,7 +2,7 @@ package pjatk.edu.pl.pokemon_data.dto;
 
 public record MoveDto(
         Long databaseId,
-        Integer Id,
+        Integer id,
         String name,
         Integer power,
         Integer accuracy,

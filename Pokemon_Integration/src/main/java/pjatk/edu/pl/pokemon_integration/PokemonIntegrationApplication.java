@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import pjatk.edu.pl.pokemon_integration.service.PokemonService;
 
 @SpringBootApplication(scanBasePackages = {"pjatk.edu.pl.pokemon_data", "pjatk.edu.pl.pokemon_integration"})
-@EnableCaching
+//@EnableCaching
 public class PokemonIntegrationApplication implements CommandLineRunner {
     private final PokemonService pokemonService;
 
@@ -23,6 +23,10 @@ public class PokemonIntegrationApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        pokemonService.fetchAndSaveTypes(5);
+        pokemonService.fetchAndSaveMoves(5);
+        pokemonService.fetchAndSaveAbilities(5);
+        pokemonService.fetchAndSaveItems(5);
         pokemonService.fetchAndSavePokemons(5);
     }
 }

@@ -1,7 +1,7 @@
 package pjatk.edu.pl.pokemon_data.dto;
 
 public record AbilityDto(
-        Long id,
-        Integer apiId,
+        Long databaseId,
+        Integer id,
         String name
 ){}
