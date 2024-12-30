@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 //TODO: FIX JOINS SO THAT JOIN TABLES GET FILLED OUT, AS WELL AS FK IN MOVE TABLE
 
 @Service
-public class PokemonService {
+public class DatabaseService {
     private final RestTemplate restTemplate;
     private final PokemonRepository pokemonRepository;
     private final AbilityRepository abilityRepository;
@@ -23,7 +23,7 @@ public class PokemonService {
     private final TypeRepository typeRepository;
 
     @Autowired
-    public PokemonService(RestTemplate restTemplate, PokemonRepository pokemonRepository, AbilityRepository abilityRepository, ItemRepository itemRepository, MoveRepository moveRepository, TypeRepository typeRepository) {
+    public DatabaseService(RestTemplate restTemplate, PokemonRepository pokemonRepository, AbilityRepository abilityRepository, ItemRepository itemRepository, MoveRepository moveRepository, TypeRepository typeRepository) {
         this.restTemplate = restTemplate;
         this.pokemonRepository = pokemonRepository;
         this.abilityRepository = abilityRepository;

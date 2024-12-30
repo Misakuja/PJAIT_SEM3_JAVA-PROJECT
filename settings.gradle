@@ -2,3 +2,4 @@ rootProject.name = 'PokeAPI'
 
 include 'Pokemon_Data'
 include 'Pokemon_Integration'
+include 'Pokemon_API'
