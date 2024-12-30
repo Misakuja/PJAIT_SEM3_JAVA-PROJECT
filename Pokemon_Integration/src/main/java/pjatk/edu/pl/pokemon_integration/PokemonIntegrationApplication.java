@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import pjatk.edu.pl.pokemon_integration.service.PokemonService;
 
 @SpringBootApplication(scanBasePackages = {"pjatk.edu.pl.pokemon_data", "pjatk.edu.pl.pokemon_integration"})
-//@EnableCaching
+@EnableCaching
 public class PokemonIntegrationApplication implements CommandLineRunner {
     private final PokemonService pokemonService;
 
@@ -26,7 +26,7 @@ public class PokemonIntegrationApplication implements CommandLineRunner {
         pokemonService.fetchAndSaveTypes();
         pokemonService.fetchAndSaveMoves();
         pokemonService.fetchAndSaveAbilities();
-        pokemonService.fetchAndSaveItems();
         pokemonService.fetchAndSavePokemons();
+        pokemonService.fetchAndSaveItems();
     }
 }

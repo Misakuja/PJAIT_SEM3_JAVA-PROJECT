@@ -11,6 +11,8 @@ import pjatk.edu.pl.pokemon_data.repository.*;
 import java.util.List;
 import java.util.function.Consumer;
 
+//TODO: FIX JOINS SO THAT JOIN TABLES GET FILLED OUT, AS WELL AS FK IN MOVE TABLE
+
 @Service
 public class PokemonService {
     private final RestTemplate restTemplate;
@@ -29,27 +31,31 @@ public class PokemonService {
         this.moveRepository = moveRepository;
         this.typeRepository = typeRepository;
     }
-    //    @Cacheable(value = "pokemons", key = "#id")
+    @Cacheable(value = "pokemons")
     public void fetchAndSavePokemons() {
         String url = "https://pokeapi.co/api/v2/pokemon/";
         fetchAndSave(url, PokemonDto.class, this::savePokemon);
     }
-    //    @Cacheable(value = "types", key = "#id")
+
+    @Cacheable(value = "types")
     public void fetchAndSaveTypes() {
         String url = "https://pokeapi.co/api/v2/type/";
         fetchAndSave(url, TypeDto.class, this::saveType);
     }
 
+    @Cacheable(value = "moves")
     public void fetchAndSaveMoves() {
             String url = "https://pokeapi.co/api/v2/move/";
             fetchAndSave(url, MoveDto.class, this::saveMove);
     }
 
+    @Cacheable(value = "items")
     public void fetchAndSaveItems() {
         String url = "https://pokeapi.co/api/v2/item/";
         fetchAndSave(url, ItemDto.class, this::saveItem);
     }
 
+    @Cacheable(value = "abilities")
     public void fetchAndSaveAbilities() {
         String url = "https://pokeapi.co/api/v2/ability/";
         fetchAndSave(url, AbilityDto.class, this::saveAbility);
@@ -145,6 +151,7 @@ public class PokemonService {
         move.setPower(dto.power());
         move.setAccuracy(dto.accuracy());
         move.setPp(dto.pp());
+
         moveRepository.save(move);
     }
 

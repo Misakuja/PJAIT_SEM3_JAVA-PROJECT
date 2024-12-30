@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Paging added, adding to db works apart from joins" />
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="adding a check for duplicates in repos">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Ability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/service/PokemonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/service/PokemonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/compileTransaction/stash-dir/PokemonIntegrationApplication.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/compileTransaction/stash-dir/PokemonIntegrationApplication.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/PokemonService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +190,8 @@
       <workItem from="1735467678996" duration="23000" />
       <workItem from="1735467811876" duration="70000" />
       <workItem from="1735467899794" duration="6668000" />
-      <workItem from="1735481816301" duration="5578000" />
+      <workItem from="1735481816301" duration="8437000" />
+      <workItem from="1735555276197" duration="4519000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -202,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735489649681</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding a check for duplicates in repos">
+      <option name="closed" value="true" />
+      <created>1735506316923</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735506316923</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +243,7 @@
     <MESSAGE value="Data works, fetchAndSave partially works" />
     <MESSAGE value="Data works, fetchAndSave works (scuffed due to weird names in dtos, but otherwise fine)" />
     <MESSAGE value="Paging added, adding to db works apart from joins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paging added, adding to db works apart from joins" />
+    <MESSAGE value="adding a check for duplicates in repos" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a check for duplicates in repos" />
   </component>
 </project>
