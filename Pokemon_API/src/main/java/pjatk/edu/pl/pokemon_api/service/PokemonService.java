@@ -1,49 +1,54 @@
 package pjatk.edu.pl.pokemon_api.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.repository.*;
+
+import java.util.List;
 
 @Service
-public class PokemonService {
+public class PokemonService extends BaseService<Pokemon> {
+    @Autowired
+    public PokemonService(PokemonRepository repository) {
+        super(repository);
+    }
+
+    public List<Pokemon> getAllPokemon() {
+        return getAllEntities();
+    }
+
+    public void deletePokemon(Long id) {
+        deleteEntity(id);
+    }
+
+    public void addPokemon(Pokemon pokemon) {
+        addEntity(pokemon);
+    }
+
+    public void updatePokemon(Pokemon pokemon, Long id) {
+        updateEntity(pokemon, id);
+    }
+
+    public Pokemon getPokemonById(Long id) {
+        return getEntityById(id);
+    }
 }
 
-// maybe:
-// generic for get all / delete?
-// generic for get by, update, add for type | item | ability?
-// split into service by each table?
 
 // TODO: ABILITY
-// GET ALL
-// ADD
-// UPDATE (PATCH)
-// DELETE
-// GET BY ID
 // GET BY NAME
 // GET BY API ID
 
 // TODO: ITEM
-// GET ALL
-// ADD
-// UPDATE (PATCH)
-// DELETE
-// GET BY ID
 // GET BY NAME
 // GET BY API ID
 
 // TODO: TYPE
-// GET ALL
-// ADD
-// UPDATE (PATCH)
-// DELETE
-// GET BY ID
 // GET BY API ID
 // GET BY NAME
 
 // TODO: MOVE
-// GET ALL
-// ADD
-// UPDATE (PATCH)
-// DELETE
-// GET BY ID
 // GET BY ACCURACY
 // GET BY API ID
 // GET BY NAME
@@ -51,11 +56,6 @@ public class PokemonService {
 // GET BY PP
 
 // TODO: POKEMON
-// GET ALL
-// ADD
-// UPDATE (PATCH)
-// DELETE
-// GET BY ID
 // GET BY API ID
 // GET BY BASE EXPERIENCE
 // GET BY HEIGHT

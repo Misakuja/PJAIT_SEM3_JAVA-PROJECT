@@ -5,18 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="adding a check for duplicates in repos">
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/PokemonApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/AbilityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/exception/EntityNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/exception/InvalidInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/AbilityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/AbilityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/ItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/MoveRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/MoveRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/TypeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/TypeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/PokemonApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/PokemonApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +70,7 @@
         <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -80,6 +96,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build PokeAPI.executor": "Run",
+    "Gradle.Build Pokemon_API.executor": "Run",
     "Gradle.Build Pokemon_Data.executor": "Run",
     "Gradle.Build Pokemon_Integration.executor": "Run",
     "Gradle.Pokemon_Data [:Pokemon_Data:pjatk.edu.pl.pokemon_data.Client.main()].executor": "Run",
@@ -88,6 +105,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.PokemonApiApplication.executor": "Run",
     "Spring Boot.PokemonDataApplication.executor": "Run",
     "Spring Boot.PokemonIntegrationApplication.executor": "Run",
     "git-widget-placeholder": "master",
@@ -125,7 +143,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PokemonIntegrationApplication">
+  <component name="RunManager" selected="Spring Boot.PokemonApiApplication">
     <configuration name="APITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pjatk.edu.pl.pokemon_integration.APITest" />
       <module name="PokeAPI.Pokemon_Integration.main" />
@@ -147,7 +165,7 @@
       </method>
     </configuration>
     <configuration name="PokemonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Pokemon_API.main" />
+      <module name="PokeAPI.Pokemon_API.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pjatk.edu.pl.pokemon_api.PokemonApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,6 +229,7 @@
       <workItem from="1735481816301" duration="8437000" />
       <workItem from="1735555276197" duration="5398000" />
       <workItem from="1735565424983" duration="1554000" />
+      <workItem from="1735729989778" duration="9250000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
