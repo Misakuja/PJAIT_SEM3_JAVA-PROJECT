@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pjatk.edu.pl.pokemon_api.service.AbilityService;
 import pjatk.edu.pl.pokemon_data.entity.Ability;
-import pjatk.edu.pl.pokemon_data.entity.Item;
 
 import java.util.List;
 
@@ -48,5 +47,18 @@ public class AbilityController {
         Ability ability = abilityService.getAbilityById(id);
         return ResponseEntity.ok(ability);
     }
+
+    @GetMapping("/apiId/{apiId}")
+    public ResponseEntity<Ability> getAbilityByApiId(@PathVariable Integer apiId) {
+        Ability ability = abilityService.getAbilityByApiId(apiId);
+        return ResponseEntity.ok(ability);
+    }
+
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Ability> getAbilityByName(@PathVariable String name) {
+        Ability ability = abilityService.getAbilityByName(name);
+        return ResponseEntity.ok(ability);
+    }
+
 
 }

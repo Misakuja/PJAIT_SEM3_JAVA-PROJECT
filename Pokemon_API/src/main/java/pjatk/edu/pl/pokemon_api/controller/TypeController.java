@@ -47,4 +47,16 @@ public class TypeController {
         Type type = typeService.getTypeById(id);
         return ResponseEntity.ok(type);
     }
+
+    @GetMapping("/apiId/{apiId}")
+    public ResponseEntity<Type> getTypeByApiId(@PathVariable Integer apiId) {
+        Type type = typeService.getTypeByApiId(apiId);
+        return ResponseEntity.ok(type);
+    }
+
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Type> getTypeByName(@PathVariable String name) {
+        Type type = typeService.getTypeByName(name);
+        return ResponseEntity.ok(type);
+    }
 }

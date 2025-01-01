@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pjatk.edu.pl.pokemon_api.service.ItemService;
 import pjatk.edu.pl.pokemon_data.entity.Item;
-import pjatk.edu.pl.pokemon_data.entity.Move;
 
 import java.util.List;
 
@@ -46,6 +45,18 @@ public class ItemController {
     @GetMapping("/id/{id}")
     public ResponseEntity<Item> getItemById(@PathVariable Long id) {
         Item item = itemService.getItemById(id);
+        return ResponseEntity.ok(item);
+    }
+
+    @GetMapping("/apiId/{apiId}")
+    public ResponseEntity<Item> getItemByApiId(@PathVariable Integer apiId) {
+        Item item = itemService.getItemByApiId(apiId);
+        return ResponseEntity.ok(item);
+    }
+
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Item> getItemByName(@PathVariable String name) {
+        Item item = itemService.getItemByName(name);
         return ResponseEntity.ok(item);
     }
 

@@ -9,6 +9,7 @@ import pjatk.edu.pl.pokemon_data.entity.*;
 import pjatk.edu.pl.pokemon_data.repository.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Consumer;
 
 //TODO: FIX JOINS SO THAT JOIN TABLES GET FILLED OUT, AS WELL AS FK IN MOVE TABLE
@@ -81,10 +82,10 @@ public class DatabaseService {
     }
 
     private void savePokemon(PokemonDto dto) {
-        Pokemon existingPokemon = pokemonRepository.findByApiId(dto.id());
+        Optional<Pokemon> existingPokemon = pokemonRepository.findByApiId(dto.id());
 
-        if (existingPokemon != null) {
-            setPokemonValues(dto, existingPokemon);
+        if (existingPokemon.isPresent()) {
+            setPokemonValues(dto, existingPokemon.orElse(null));
         } else {
             Pokemon pokemon = new Pokemon();
             setPokemonValues(dto, pokemon);
@@ -118,10 +119,10 @@ public class DatabaseService {
     }
 
     private void saveType(TypeDto dto) {
-        Type existingType = typeRepository.findByApiId(dto.id());
+        Optional<Type> existingType = typeRepository.findByApiId(dto.id());
 
-        if (existingType != null) {
-            setTypeValues(dto, existingType);
+        if (existingType.isPresent()) {
+            setTypeValues(dto, existingType.orElse(null));
         } else {
             Type type = new Type();
             setTypeValues(dto, type);
@@ -135,10 +136,10 @@ public class DatabaseService {
     }
 
     private void saveMove(MoveDto dto) {
-        Move existingMove = moveRepository.findByApiId(dto.id());
+        Optional<Move> existingMove = moveRepository.findByApiId(dto.id());
 
-        if (existingMove != null) {
-            setMoveValues(dto, existingMove);
+        if (existingMove.isPresent()) {
+            setMoveValues(dto, existingMove.orElse(null));
         } else {
             Move move = new Move();
             setMoveValues(dto, move);
@@ -156,10 +157,10 @@ public class DatabaseService {
     }
 
     private void saveAbility(AbilityDto dto) {
-        Ability existingAbility = abilityRepository.findByApiId(dto.id());
+        Optional<Ability> existingAbility = abilityRepository.findByApiId(dto.id());
 
-        if (existingAbility != null) {
-            setMoveValues(dto, existingAbility);
+        if (existingAbility.isPresent()) {
+            setMoveValues(dto, existingAbility.orElse(null));
         } else {
             Ability ability = new Ability();
             setMoveValues(dto, ability);
@@ -173,9 +174,9 @@ public class DatabaseService {
     }
 
     private void saveItem(ItemDto dto) {
-        Item existingItem = itemRepository.findByApiId(dto.id());
-        if (existingItem != null) {
-            setItemValues(dto, existingItem);
+        Optional<Item> existingItem = itemRepository.findByApiId(dto.id());
+        if (existingItem.isPresent()) {
+            setItemValues(dto, existingItem.orElse(null));
         } else {
             Item item = new Item();
             setItemValues(dto, item);
