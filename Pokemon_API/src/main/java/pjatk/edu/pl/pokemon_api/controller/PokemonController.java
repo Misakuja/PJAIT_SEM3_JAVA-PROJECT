@@ -50,6 +50,12 @@ public class PokemonController {
         Pokemon pokemon = pokemonService.getPokemonById(id);
         return ResponseEntity.ok(pokemon);
     }
+
+    @GetMapping("/weight/{weight}")
+    public ResponseEntity<List<Pokemon>> getPokemonById(@PathVariable int weight) {
+        List<Pokemon> pokemon = pokemonService.getPokemonByWeight(weight);
+        return ResponseEntity.ok(pokemon);
+    }
 }
 
 

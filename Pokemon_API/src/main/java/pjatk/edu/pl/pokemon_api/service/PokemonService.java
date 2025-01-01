@@ -33,6 +33,10 @@ public class PokemonService extends BaseService<Pokemon> {
     public Pokemon getPokemonById(Long id) {
         return getEntityById(id);
     }
+
+    public List<Pokemon> getPokemonByWeight(int weight) {
+        return getEntityByField("weight", weight);
+    }
 }
 
 
