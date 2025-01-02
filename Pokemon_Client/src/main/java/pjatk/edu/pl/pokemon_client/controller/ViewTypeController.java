@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewTypeService;
 import pjatk.edu.pl.pokemon_data.entity.Type;
-import pjatk.edu.pl.pokemon_data.entity.Type;
 
 import java.util.List;
 
@@ -86,7 +85,40 @@ public class ViewTypeController {
     @PostMapping("/find/id")
     public String viewById(@ModelAttribute Type type, Model model) {
         Long inputId = type.getId();
+        model.addAttribute("entityType", "Type");
         model.addAttribute("entities", viewTypeService.getTypeById(inputId));
+        return "displayList";
+    }
+
+    //find by API id
+    @GetMapping("/find/apiId")
+    public String findByApiIdForm(Model model) {
+        model.addAttribute("entityType", "Type");
+        model.addAttribute("type", new Type());
+        return "findByApiIdForm";
+    }
+
+    @PostMapping("/find/apiId")
+    public String viewByApiId(@ModelAttribute Type type, Model model) {
+        Integer inputApiId = type.getApiId();
+        model.addAttribute("entityType", "Type");
+        model.addAttribute("entities", viewTypeService.getTypeByApiId(inputApiId));
+        return "displayList";
+    }
+
+    //find by name
+    @GetMapping("/find/name")
+    public String findByNameForm(Model model) {
+        model.addAttribute("entityType", "Type");
+        model.addAttribute("type", new Type());
+        return "findByNameForm";
+    }
+
+    @PostMapping("/find/name")
+    public String viewByName(@ModelAttribute Type type, Model model) {
+        String nameInput = type.getName();
+        model.addAttribute("entityType", "Type");
+        model.addAttribute("entities", viewTypeService.getTypeByName(nameInput));
         return "displayList";
     }
 }

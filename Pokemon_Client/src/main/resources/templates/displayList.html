@@ -5,7 +5,6 @@
     <title>Display List</title>
 </head>
 <body>
-    <h1 th:text="${entityType} + ' List'"></h1>
     <table class="table">
         <thead th:unless="${entityType == 'Pokemon'} OR ${entityType == 'Move'}">
         <tr>

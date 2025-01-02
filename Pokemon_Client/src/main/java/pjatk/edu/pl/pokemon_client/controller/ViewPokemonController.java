@@ -10,6 +10,7 @@ import pjatk.edu.pl.pokemon_client.service.ViewPokemonService;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 
 import java.util.List;
 
@@ -87,7 +88,88 @@ public class ViewPokemonController {
     @PostMapping("/find/id")
     public String viewById(@ModelAttribute Pokemon pokemon, Model model) {
         Long inputId = pokemon.getId();
+        model.addAttribute("entityType", "Pokemon");
         model.addAttribute("entities", viewPokemonService.getPokemonById(inputId));
+        return "displayList";
+    }
+
+    //find by API id
+    @GetMapping("/find/apiId")
+    public String findByApiIdForm(Model model) {
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("pokemon", new Pokemon());
+        return "findByApiIdForm";
+    }
+
+    @PostMapping("/find/apiId")
+    public String viewByApiId(@ModelAttribute Pokemon pokemon, Model model) {
+        Integer inputApiId = pokemon.getApiId();
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("entities", viewPokemonService.getPokemonByApiId(inputApiId));
+        return "displayList";
+    }
+
+    //find by name
+    @GetMapping("/find/name")
+    public String findByNameForm(Model model) {
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("pokemon", new Pokemon());
+        return "findByNameForm";
+    }
+
+    @PostMapping("/find/name")
+    public String viewByName(@ModelAttribute Pokemon pokemon, Model model) {
+        String nameInput = pokemon.getName();
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("entities", viewPokemonService.getPokemonByName(nameInput));
+        return "displayList";
+    }
+
+    //find by base experience
+    @GetMapping("/find/baseExperience")
+    public String findByBaseExperienceForm(Model model) {
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("pokemon", new Pokemon());
+        return "findByBaseExperienceForm";
+    }
+
+    @PostMapping("/find/baseExperience")
+    public String viewByBaseExperience(@ModelAttribute Pokemon pokemon, Model model) {
+        Integer baseExperienceInput = pokemon.getBaseExperience();
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("entities", viewPokemonService.getPokemonByBaseExperience(baseExperienceInput));
+        return "displayList";
+    }
+
+    //find by height
+    @GetMapping("/find/height")
+    public String findByHeightForm(Model model) {
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("pokemon", new Pokemon());
+        return "findByHeightForm";
+    }
+
+    @PostMapping("/find/height")
+    public String viewByHeight(@ModelAttribute Pokemon pokemon, Model model) {
+        Integer heightInput = pokemon.getHeight();
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("entities", viewPokemonService.getPokemonByHeight(heightInput));
+        return "displayList";
+    }
+
+    //find by weight
+    @GetMapping("/find/weight")
+    public String findByWeightForm(Model model) {
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("pokemon", new Pokemon());
+        return "findByWeightForm";
+    }
+
+    @PostMapping("/find/weight")
+    public String viewByWeight(@ModelAttribute Pokemon pokemon, Model model) {
+        Integer weightInput = pokemon.getWeight();
+        model.addAttribute("entityType", "Pokemon");
+        model.addAttribute("entities", viewPokemonService.getPokemonByWeight(weightInput));
         return "displayList";
     }
 }

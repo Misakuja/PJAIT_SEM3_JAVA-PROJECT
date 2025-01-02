@@ -5,7 +5,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import pjatk.edu.pl.pokemon_client.service.ViewAbilityService;
 import pjatk.edu.pl.pokemon_data.entity.Ability;
-import pjatk.edu.pl.pokemon_data.entity.Ability;
 
 import java.util.List;
 
@@ -84,10 +83,38 @@ public class ViewAbilityController {
     @PostMapping("/find/id")
     public String viewById(@ModelAttribute Ability ability, Model model) {
         Long inputId = ability.getId();
+        model.addAttribute("entityType", "Ability");
         model.addAttribute("entities", viewAbilityService.getAbilityById(inputId));
         return "displayList";
     }
-    
-    //find by api id
+
+    //find by API id
+    @GetMapping("/find/apiId")
+    public String findByApiIdForm(Model model) {
+        model.addAttribute("entityType", "Ability");
+        model.addAttribute("ability", new Ability());
+        return "findByApiIdForm";
+    }
+
+    @PostMapping("/find/apiId")
+    public String viewByApiId(@ModelAttribute Ability ability, Model model) {
+        Integer inputApiId = ability.getApiId();
+        model.addAttribute("entities", viewAbilityService.getAbilityByApiId(inputApiId));
+        return "displayList";
+    }
+
     //find by name
+    @GetMapping("/find/name")
+    public String findByNameForm(Model model) {
+        model.addAttribute("entityType", "Ability");
+        model.addAttribute("ability", new Ability());
+        return "findByNameForm";
+    }
+
+    @PostMapping("/find/name")
+    public String viewByName(@ModelAttribute Ability ability, Model model) {
+        String nameInput = ability.getName();
+        model.addAttribute("entities", viewAbilityService.getAbilityByName(nameInput));
+        return "displayList";
+    }
 }

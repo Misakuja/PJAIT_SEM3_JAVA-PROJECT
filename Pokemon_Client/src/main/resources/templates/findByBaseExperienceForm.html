@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find By Base Experience Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/client/pokemon/find/baseExperience}" th:object="${pokemon}" method="POST">
+  <label for="pokemonBaseExperience">Base Experience:</label>
+  <input type="number" id="pokemonBaseExperience" name="pokemonBaseExperience" th:field="*{baseExperience}"/>
+  <input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>

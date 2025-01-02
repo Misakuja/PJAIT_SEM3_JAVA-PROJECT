@@ -31,6 +31,26 @@ public class ViewMoveService extends ViewBaseService {
     }
 
     public Move getMoveById(Long id) {
-        return getEntityById("/move/id/" + id, id, new ParameterizedTypeReference<Move>() {});
+        return getEntityByField("/move/id/" + id, id, new ParameterizedTypeReference<Move>() {});
+    }
+
+    public Move getMoveByApiId(Integer apiId) {
+        return getEntityByField("/move/apiId/" + apiId, apiId, new ParameterizedTypeReference<Move>() {});
+    }
+
+    public Move getMoveByName(String name) {
+        return getEntityByField("/move/name/" + name, name, new ParameterizedTypeReference<Move>() {});
+    }
+
+    public List<Move> getMoveByAccuracy(Integer accuracy) {
+        return getEntityListByField("/move/accuracy/" + accuracy, accuracy);
+    }
+
+    public List<Move> getMoveByPower(Integer power) {
+        return getEntityListByField("/move/power/" + power, power);
+    }
+
+    public List<Move> getMoveByPp(Integer pp) {
+        return getEntityListByField("/move/pp/" + pp, pp);
     }
 }

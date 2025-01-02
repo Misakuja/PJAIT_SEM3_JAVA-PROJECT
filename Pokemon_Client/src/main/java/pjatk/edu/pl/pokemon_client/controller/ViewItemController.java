@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewItemService;
 import pjatk.edu.pl.pokemon_data.entity.Item;
+import pjatk.edu.pl.pokemon_data.entity.Item;
 
 import java.util.List;
 
@@ -85,6 +86,36 @@ public class ViewItemController {
     public String viewById(@ModelAttribute Item item, Model model) {
         Long inputId = item.getId();
         model.addAttribute("entities", viewItemService.getItemById(inputId));
+        return "displayList";
+    }
+
+    //find by API id
+    @GetMapping("/find/apiId")
+    public String findByApiIdForm(Model model) {
+        model.addAttribute("entityType", "Item");
+        model.addAttribute("item", new Item());
+        return "findByApiIdForm";
+    }
+
+    @PostMapping("/find/apiId")
+    public String viewByApiId(@ModelAttribute Item item, Model model) {
+        Integer inputApiId = item.getApiId();
+        model.addAttribute("entities", viewItemService.getItemByApiId(inputApiId));
+        return "displayList";
+    }
+
+    //find by name
+    @GetMapping("/find/name")
+    public String findByNameForm(Model model) {
+        model.addAttribute("entityType", "Item");
+        model.addAttribute("item", new Item());
+        return "findByNameForm";
+    }
+
+    @PostMapping("/find/name")
+    public String viewByName(@ModelAttribute Item item, Model model) {
+        String nameInput = item.getName();
+        model.addAttribute("entities", viewItemService.getItemByName(nameInput));
         return "displayList";
     }
 }

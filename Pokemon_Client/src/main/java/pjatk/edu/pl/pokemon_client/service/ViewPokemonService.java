@@ -4,6 +4,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 
 import java.util.List;
 
@@ -30,6 +31,26 @@ public class ViewPokemonService extends ViewBaseService {
     }
 
     public Pokemon getPokemonById(Long id) {
-        return getEntityById("/pokemon/id/" + id, id, new ParameterizedTypeReference<Pokemon>() {});
+        return getEntityByField("/pokemon/id/" + id, id, new ParameterizedTypeReference<Pokemon>() {});
+    }
+
+    public Pokemon getPokemonByApiId(Integer apiId) {
+        return getEntityByField("/pokemon/apiId/" + apiId, apiId, new ParameterizedTypeReference<Pokemon>() {});
+    }
+
+    public Pokemon getPokemonByName(String name) {
+        return getEntityByField("/pokemon/name/" + name, name, new ParameterizedTypeReference<Pokemon>() {});
+    }
+
+    public List<Pokemon> getPokemonByBaseExperience(Integer baseExperience) {
+        return getEntityListByField("/pokemon/baseExperience/" + baseExperience, baseExperience);
+    }
+
+    public List<Pokemon> getPokemonByHeight(Integer height) {
+        return getEntityListByField("/pokemon/height/" + height, height);
+    }
+
+    public List<Pokemon> getPokemonByWeight(Integer weight) {
+        return getEntityListByField("/pokemon/weight/" + weight, weight);
     }
 }

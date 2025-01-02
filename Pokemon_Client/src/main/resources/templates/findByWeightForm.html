@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find By Weight Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/client/pokemon/find/weight}" th:object="${pokemon}" method="POST">
+    <label for="pokemonWeight">Weight:</label>
+    <input type="number" id="pokemonWeight" name="pokemonWeight" th:field="*{weight}"/>
+    <input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>

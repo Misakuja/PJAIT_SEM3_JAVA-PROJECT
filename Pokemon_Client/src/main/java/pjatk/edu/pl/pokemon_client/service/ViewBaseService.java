@@ -72,7 +72,7 @@ public abstract class ViewBaseService {
     }
 
     protected <T> void updateEntity(String url, T entity, Long id) {
-        logger.info("Attempting to update entity of ID: {} using values: {}", id,  entity);
+        logger.info("Attempting to update entity of ID: {} using values: {}", id, entity);
         try {
             restClient.put()
                     .uri(url)
@@ -84,20 +84,42 @@ public abstract class ViewBaseService {
         logger.info("Successfully updated entity with ID: {} using values: {}", id, entity);
     }
 
-    protected <T> T getEntityById(String url, Long id, ParameterizedTypeReference<T> typeReference) {
-        logger.info("Attempting to get entity with ID: {}", id);
+    protected <T> T getEntityByField(String url, Object field, ParameterizedTypeReference<T> typeReference) {
+        logger.info("Attempting to get entity by field. Using value: {}", field);
         try {
             T entity = restClient.get()
                     .uri(url)
                     .retrieve()
                     .body(typeReference);
-            logger.info("Successfully got entity with ID: {}", id);
+            logger.info("Successfully got entity by field, using value {}.", field);
             return entity;
+
         } catch (Exception e) {
-            logger.error("Failed to get entity by ID. {}", String.valueOf(e));
+            logger.error("Failed to get entity by field. Using value {}. {}", field, String.valueOf(e));
             throw e;
         }
     }
 
+    protected <T> List<T> getEntityListByField(String url, Object field) {
+        logger.info("Attempting to get all entities by field. Using value: {}", field);
+        List<T> entityList = null;
 
+        try {
+            entityList = restClient.get()
+                    .uri(url)
+                    .retrieve()
+                    .body(new ParameterizedTypeReference<>() {
+                    });
+
+            assert entityList != null;
+            if (entityList.isEmpty()) {
+                throw new EntityNotFound();
+            }
+
+        } catch (Exception e) {
+            logger.error("Failed to get entities by field. Using value {}. {}", field, String.valueOf(e));
+        }
+        logger.info("Successfully got all entities by field, using value {}.", field);
+        return entityList;
+    }
 }

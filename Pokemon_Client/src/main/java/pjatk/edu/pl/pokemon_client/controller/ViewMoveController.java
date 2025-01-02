@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewMoveService;
 import pjatk.edu.pl.pokemon_data.entity.Move;
-import pjatk.edu.pl.pokemon_data.entity.Move;
-import pjatk.edu.pl.pokemon_data.entity.Move;
 
 import java.util.List;
 
@@ -86,7 +84,88 @@ public class ViewMoveController {
     @PostMapping("/find/id")
     public String viewById(@ModelAttribute Move move, Model model) {
         Long inputId = move.getId();
+        model.addAttribute("entityType", "Move");
         model.addAttribute("entities", viewMoveService.getMoveById(inputId));
+        return "displayList";
+    }
+
+    //find by API id
+    @GetMapping("/find/apiId")
+    public String findByApiIdForm(Model model) {
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("move", new Move());
+        return "findByApiIdForm";
+    }
+
+    @PostMapping("/find/apiId")
+    public String viewByApiId(@ModelAttribute Move move, Model model) {
+        Integer inputApiId = move.getApiId();
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("entities", viewMoveService.getMoveByApiId(inputApiId));
+        return "displayList";
+    }
+
+    //find by name
+    @GetMapping("/find/name")
+    public String findByNameForm(Model model) {
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("move", new Move());
+        return "findByNameForm";
+    }
+
+    @PostMapping("/find/name")
+    public String viewByName(@ModelAttribute Move move, Model model) {
+        String nameInput = move.getName();
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("entities", viewMoveService.getMoveByName(nameInput));
+        return "displayList";
+    }
+
+    //find by accuracy
+    @GetMapping("/find/accuracy")
+    public String findByAccuracyForm(Model model) {
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("move", new Move());
+        return "findByAccuracyForm";
+    }
+
+    @PostMapping("/find/accuracy")
+    public String viewByAccuracy(@ModelAttribute Move move, Model model) {
+        Integer accuracyInput = move.getAccuracy();
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("entities", viewMoveService.getMoveByAccuracy(accuracyInput));
+        return "displayList";
+    }
+
+    //find by power
+    @GetMapping("/find/power")
+    public String findByPowerForm(Model model) {
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("move", new Move());
+        return "findByPowerForm";
+    }
+
+    @PostMapping("/find/power")
+    public String viewByPower(@ModelAttribute Move move, Model model) {
+        Integer powerInput = move.getPower();
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("entities", viewMoveService.getMoveByPower(powerInput));
+        return "displayList";
+    }
+
+    //find by pp
+    @GetMapping("/find/pp")
+    public String findByPpForm(Model model) {
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("move", new Move());
+        return "findByPpForm";
+    }
+
+    @PostMapping("/find/pp")
+    public String viewByPp(@ModelAttribute Move move, Model model) {
+        Integer ppInput = move.getAccuracy();
+        model.addAttribute("entityType", "Move");
+        model.addAttribute("entities", viewMoveService.getMoveByPp(ppInput));
         return "displayList";
     }
 }
