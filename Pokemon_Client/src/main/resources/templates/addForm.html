@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Form</title>
+</head>
+<body>
+  <form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/add}" th:object="${ability}" method="POST">
+    <label for="abilityApiId">API ID:</label>
+    <input type="number" id="abilityApiId" name="abilityApiId" th:field="*{apiId}"/>
+
+    <label for="abilityName">Name:</label>
+    <input type="text" id="abilityName" name="abilityName" th:field="*{name}"/>
+
+    <input type="submit" id="abilitySubmit" value="Submit">
+  </form>
+
+  <form th:if="${entityType == 'Item'}" action="#" th:action="@{/client/item/add}" th:object="${item}" method="POST">
+    <label for="itemApiId">API ID:</label>
+    <input type="number" id="itemApiId" name="itemApiId" th:field="*{apiId}"/>
+
+    <label for="itemName">Name:</label>
+    <input type="text" id="itemName" name="itemName" th:field="*{name}"/>
+
+    <input type="submit" id="itemSubmit" value="Submit">
+  </form>
+
+  <!--TODO: ONCE FIXED, ADD TYPE ADDITION -->
+  <form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/add}" th:object="${move}" method="POST">
+    <label for="moveApiId">API ID:</label>
+    <input type="number" id="moveApiId" name="moveApiId" th:field="*{apiId}"/>
+
+    <label for="moveName">Name:</label>
+    <input type="text" id="moveName" name="moveName" th:field="*{name}"/>
+
+    <label for="moveAccuracy">Name:</label>
+    <input type="number" id="moveAccuracy" name="moveAccuracy" th:field="*{accuracy}"/>
+
+    <label for="movePower">Name:</label>
+    <input type="number" id="movePower" name="movePower" th:field="*{power}"/>
+
+    <label for="movePp">Name:</label>
+    <input type="number" id="movePp" name="movePower" th:field="*{pp}"/>
+
+    <input type="submit" id="moveSubmit" value="Submit">
+  </form>
+
+  <!--TODO: ONCE FIXED, ADD TYPE / MOVE / ABILITY ADDITION (MAYBE) -->
+  <form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/add}" th:object="${pokemon}" method="POST">
+    <label for="pokemonApiId">API ID:</label>
+    <input type="number" id="pokemonApiId" name="pokemonApiId" th:field="*{apiId}"/>
+
+    <label for="pokemonName">Name:</label>
+    <input type="text" id="pokemonName" name="pokemonName" th:field="*{name}"/>
+
+    <label for="pokemonBaseExperience">Name:</label>
+    <input type="number" id="pokemonBaseExperience" name="pokemonBaseExperience" th:field="*{baseExperience}"/>
+
+    <label for="pokemonHeight">Name:</label>
+    <input type="number" id="pokemonHeight" name="pokemonHeight" th:field="*{height}"/>
+
+    <label for="pokemonWeight">Name:</label>
+    <input type="number" id="pokemonWeight" name="pokemonWeight" th:field="*{weight}"/>
+
+    <input type="submit" id="pokemonSubmit" value="Submit">
+  </form>
+
+  <form th:if="${entityType == 'Type'}" action="#" th:action="@{/client/type/add}" th:object="${type}" method="POST">
+    <label for="typeApiId">API ID:</label>
+    <input type="number" id="typeApiId" name="typeApiId" th:field="*{apiId}"/>
+
+    <label for="typeName">Name:</label>
+    <input type="text" id="typeName" name="typeName" th:field="*{name}"/>
+
+    <input type="submit" id="typeSubmit" value="Submit">
+  </form>
+</body>
+</html>

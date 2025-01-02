@@ -19,7 +19,7 @@ public class TypeController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Type>> getAllItems() {
+    public ResponseEntity<List<Type>> getAllTypes() {
         List<Type> types = typeService.getAllTypes();
         return ResponseEntity.ok(types);
     }

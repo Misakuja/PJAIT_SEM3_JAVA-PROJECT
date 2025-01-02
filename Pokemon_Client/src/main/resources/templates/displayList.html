@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display List</title>
+</head>
+<body>
+    <h1 th:text="${entityType} + ' List'"></h1>
+    <table class="table">
+        <thead th:unless="${entityType == 'Pokemon'} OR ${entityType == 'Move'}">
+        <tr>
+            <th>ID</th>
+            <th>API ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+
+        <thead th:if="${entityType == 'Pokemon'}">
+        <tr>
+            <th>ID</th>
+            <th>API ID</th>
+            <th>Name</th>
+            <th>Base Experience</th>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        </thead>
+
+        <thead th:if="${entityType == 'Move'}">
+        <tr>
+            <th>ID</th>
+            <th>API ID</th>
+            <th>Name</th>
+            <th>Accuracy</th>
+            <th>Power</th>
+            <th>PP</th>
+        </tr>
+        </thead>
+
+        <tbody th:unless="${entityType == 'Pokemon'} OR ${entityType == 'Move'}">
+        <tr th:each="entity : ${entities}">
+            <td th:text="${entity.id}"></td>
+            <td th:text="${entity.apiId}"></td>
+            <td th:text="${entity.name}"></td>
+        </tr>
+        </tbody>
+
+        <tbody th:if="${entityType == 'Pokemon'}">
+        <tr th:each="entity : ${entities}">
+            <td th:text="${entity.id}"></td>
+            <td th:text="${entity.apiId}"></td>
+            <td th:text="${entity.name}"></td>
+            <td th:text="${entity.baseExperience}"></td>
+            <td th:text="${entity.height}"></td>
+            <td th:text="${entity.weight}"></td>
+        </tr>
+        </tbody>
+
+        <tbody th:if="${entityType == 'Move'}">
+        <tr th:each="entity : ${entities}">
+            <td th:text="${entity.id}"></td>
+            <td th:text="${entity.apiId}"></td>
+            <td th:text="${entity.name}"></td>
+            <td th:text="${entity.accuracy}"></td>
+            <td th:text="${entity.power}"></td>
+            <td th:text="${entity.pp}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

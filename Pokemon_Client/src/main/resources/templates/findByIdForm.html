@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find By Id Form</title>
+</head>
+<body>
+<form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/find/id}" th:object="${ability}" method="POST">
+  <label for="abilityId">ID:</label>
+  <input type="number" id="abilityId" name="abilityId" th:field="*{id}"/>
+  <input type="submit" id="abilitySubmit" value="Submit">
+</form>
+
+<form th:if="${entityType == 'Item'}" action="#" th:action="@{/client/item/find/id}" th:object="${item}" method="POST">
+  <label for="itemId">ID:</label>
+  <input type="number" id="itemId" name="itemId" th:field="*{id}"/>
+  <input type="submit" id="itemSubmit" value="Submit">
+</form>
+
+<form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/find/id}" th:object="${move}" method="POST">
+  <label for="moveId">ID:</label>
+  <input type="number" id="moveId" name="moveId" th:field="*{id}"/>
+  <input type="submit" id="moveSubmit" value="Submit">
+</form>
+
+<form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/find/id}" th:object="${pokemon}" method="POST">
+  <label for="pokemonId">ID:</label>
+  <input type="number" id="pokemonId" name="pokemonId" th:field="*{id}"/>
+  <input type="submit" id="pokemonSubmit" value="Submit">
+</form>
+
+<form th:if="${entityType == 'Type'}" action="#" th:action="@{/client/type/find/id}" th:object="${type}" method="POST">
+  <label for="typeId">ID:</label>
+  <input type="number" id="typeId" name="typeId" th:field="*{id}"/>
+  <input type="submit" id="typeSubmit" value="Submit">
+</form>
+</body>
+</html>

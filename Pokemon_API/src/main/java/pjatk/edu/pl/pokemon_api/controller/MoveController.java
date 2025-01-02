@@ -19,7 +19,7 @@ public class MoveController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Move>> getAllItems() {
+    public ResponseEntity<List<Move>> getAllMoves() {
         List<Move> moves = moveService.getAllMoves();
         return ResponseEntity.ok(moves);
     }

@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_api.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
-import pjatk.edu.pl.pokemon_data.entity.Move;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.repository.*;
 

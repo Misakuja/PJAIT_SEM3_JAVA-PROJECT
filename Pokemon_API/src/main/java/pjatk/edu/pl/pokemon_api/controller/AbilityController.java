@@ -19,7 +19,7 @@ public class AbilityController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Ability>> getAllItems() {
+    public ResponseEntity<List<Ability>> getAllAbilities() {
         List<Ability> abilities = abilityService.getAllAbilities();
         return ResponseEntity.ok(abilities);
     }

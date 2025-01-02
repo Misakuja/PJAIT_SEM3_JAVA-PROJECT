@@ -23,7 +23,7 @@ public class PokemonController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Pokemon>> getAllItems() {
+    public ResponseEntity<List<Pokemon>> getAllPokemon() {
         List<Pokemon> pokemons = pokemonService.getAllPokemon();
         return ResponseEntity.ok(pokemons);
     }

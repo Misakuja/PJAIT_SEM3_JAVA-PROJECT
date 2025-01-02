@@ -1,0 +1,37 @@
+package pjatk.edu.pl.pokemon_client.service;
+
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
+import pjatk.edu.pl.pokemon_data.entity.Ability;
+
+import java.util.List;
+
+@Service
+public class ViewAbilityService extends ViewBaseService {
+
+    public ViewAbilityService(RestClient restClient) {
+        super(restClient);
+    }
+
+    public List<Ability> getAllAbilities() {
+        return getAllEntities("/ability");
+    }
+
+    public void deleteAbility(Long id) {
+        deleteEntity("/ability/" + id, id);
+    }
+
+    public void addAbility(Ability ability) {
+        addEntity("/ability/add", ability);
+    }
+
+    public void updateAbility(Ability ability, Long id) {
+        updateEntity("/ability/" + id, ability, id);
+    }
+
+    public Ability getAbilityById(Long id) {
+        return getEntityById("/ability/id/" + id, id, new ParameterizedTypeReference<Ability>() {});
+    }
+
+}
