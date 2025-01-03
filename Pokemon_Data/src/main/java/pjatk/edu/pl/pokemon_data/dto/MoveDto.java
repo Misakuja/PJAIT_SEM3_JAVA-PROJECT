@@ -1,8 +1,10 @@
 package pjatk.edu.pl.pokemon_data.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public record MoveDto(
         Long databaseId,
-        Integer id,
+        @JsonProperty("id") Integer apiId,
         String name,
         Integer power,
         Integer accuracy,

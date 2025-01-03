@@ -31,7 +31,7 @@ public class ViewMoveService extends ViewBaseService {
     }
 
     public Move getMoveById(Long id) {
-        return getEntityByField("/move/id/" + id, id, new ParameterizedTypeReference<Move>() {});
+        return getEntityByField("/move/apiId/" + id, id, new ParameterizedTypeReference<Move>() {});
     }
 
     public Move getMoveByApiId(Integer apiId) {

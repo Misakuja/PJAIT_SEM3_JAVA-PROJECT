@@ -31,7 +31,7 @@ public class ViewAbilityService extends ViewBaseService {
     }
 
     public Ability getAbilityById(Long id) {
-        return getEntityByField("/ability/id/" + id, id, new ParameterizedTypeReference<Ability>() {});
+        return getEntityByField("/ability/apiId/" + id, id, new ParameterizedTypeReference<Ability>() {});
     }
 
     public Ability getAbilityByApiId(Integer apiId) {

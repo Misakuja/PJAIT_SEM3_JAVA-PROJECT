@@ -1,4 +1,4 @@
-package pjatk.edu.pl.pokemon_api.exception;
+package pjatk.edu.pl.pokemon_data.exception;
 
 public class InvalidInput extends RuntimeException {
     public InvalidInput() {

@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewPokemonService;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
-import pjatk.edu.pl.pokemon_data.entity.Pokemon;
-import pjatk.edu.pl.pokemon_data.entity.Pokemon;
-import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 
 import java.util.List;
 
@@ -77,7 +74,7 @@ public class ViewPokemonController {
         return "redirect:/client/pokemon";
     }
 
-    //find by id
+    //find by apiId
     @GetMapping("/find/id")
     public String findByIdForm(Model model) {
         model.addAttribute("entityType", "Pokemon");
@@ -93,7 +90,7 @@ public class ViewPokemonController {
         return "displayList";
     }
 
-    //find by API id
+    //find by API apiId
     @GetMapping("/find/apiId")
     public String findByApiIdForm(Model model) {
         model.addAttribute("entityType", "Pokemon");

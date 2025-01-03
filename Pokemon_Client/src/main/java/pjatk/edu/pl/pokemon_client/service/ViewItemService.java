@@ -4,7 +4,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import pjatk.edu.pl.pokemon_data.entity.Item;
-import pjatk.edu.pl.pokemon_data.entity.Item;
 
 import java.util.List;
 
@@ -32,7 +31,7 @@ public class ViewItemService extends ViewBaseService {
     }
 
     public Item getItemById(Long id) {
-        return getEntityByField("/item/id/" + id, id, new ParameterizedTypeReference<Item>() {});
+        return getEntityByField("/item/apiId/" + id, id, new ParameterizedTypeReference<Item>() {});
     }
 
     public Item getItemByApiId(Integer apiId) {

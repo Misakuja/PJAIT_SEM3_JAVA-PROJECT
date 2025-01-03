@@ -6,9 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.web.client.RestClient;
-import pjatk.edu.pl.pokemon_api.exception.EntityAlreadyExists;
-import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
-import pjatk.edu.pl.pokemon_api.exception.InvalidInput;
+import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
+import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
+import pjatk.edu.pl.pokemon_data.exception.InvalidInput;
 
 @ComponentScan
 @Configuration

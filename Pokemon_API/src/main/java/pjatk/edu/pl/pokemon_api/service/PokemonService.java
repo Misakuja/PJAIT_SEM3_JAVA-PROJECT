@@ -4,10 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pjatk.edu.pl.pokemon_api.exception.EntityAlreadyExists;
-import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
-import pjatk.edu.pl.pokemon_data.repository.*;
+import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
+import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
+import pjatk.edu.pl.pokemon_data.repository.PokemonRepository;
 
 import java.util.List;
 import java.util.Optional;

@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -18,7 +20,10 @@ public class Move {
     private Integer accuracy;
     private Integer pp;
 
+    @ManyToMany(mappedBy = "moves")
+    private List<Pokemon> pokemons;
+
     @ManyToOne
-    @JoinColumn(name = "type_id")  // foreign key from types, many moves one type
+    @JoinColumn(name = "type_id")
     private Type type;
 }

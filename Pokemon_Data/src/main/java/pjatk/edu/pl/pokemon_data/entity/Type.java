@@ -17,6 +17,9 @@ public class Type {
     private Integer apiId; //API ID
     private String name;
 
-    @OneToMany(mappedBy = "type")  // refers to the 'type' field in the Move entity | one type many moves
+    @ManyToMany(mappedBy = "types")
+    private List<Pokemon> pokemons;
+
+    @OneToMany(mappedBy = "type")
     private List<Move> moves;
 }

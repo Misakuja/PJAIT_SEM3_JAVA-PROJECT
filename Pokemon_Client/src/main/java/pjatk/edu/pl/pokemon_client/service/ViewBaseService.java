@@ -6,7 +6,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
+import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 
 import java.util.List;
 

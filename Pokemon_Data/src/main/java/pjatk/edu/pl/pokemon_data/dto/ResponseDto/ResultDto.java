@@ -1,4 +1,4 @@
-package pjatk.edu.pl.pokemon_data.dto;
+package pjatk.edu.pl.pokemon_data.dto.ResponseDto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -23,9 +23,9 @@ public class PokemonIntegrationApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        databaseService.fetchAndSaveTypes();
-        databaseService.fetchAndSaveMoves();
-        databaseService.fetchAndSaveAbilities();
+//        databaseService.fetchAndSaveTypes();
+//        databaseService.fetchAndSaveMoves();
+//        databaseService.fetchAndSaveAbilities();
         databaseService.fetchAndSavePokemons();
         databaseService.fetchAndSaveItems();
     }

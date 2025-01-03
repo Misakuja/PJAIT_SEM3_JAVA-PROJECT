@@ -4,7 +4,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import pjatk.edu.pl.pokemon_data.entity.Type;
-import pjatk.edu.pl.pokemon_data.entity.Type;
 
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class ViewTypeService extends ViewBaseService {
     }
 
     public Type getTypeById(Long id) {
-        return getEntityByField("/type/id/" + id, id, new ParameterizedTypeReference<Type>() {});
+        return getEntityByField("/type/apiId/" + id, id, new ParameterizedTypeReference<Type>() {});
     }
 
     public Type getTypeByApiId(Integer apiId) {

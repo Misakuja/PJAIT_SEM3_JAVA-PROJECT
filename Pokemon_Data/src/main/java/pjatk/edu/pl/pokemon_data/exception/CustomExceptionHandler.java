@@ -1,4 +1,4 @@
-package pjatk.edu.pl.pokemon_api.exception;
+package pjatk.edu.pl.pokemon_data.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

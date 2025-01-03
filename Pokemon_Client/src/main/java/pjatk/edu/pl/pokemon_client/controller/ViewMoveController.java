@@ -73,7 +73,7 @@ public class ViewMoveController {
         return "redirect:/client/move";
     }
 
-    //find by id
+    //find by apiId
     @GetMapping("/find/id")
     public String findByIdForm(Model model) {
         model.addAttribute("entityType", "Move");
@@ -89,7 +89,7 @@ public class ViewMoveController {
         return "displayList";
     }
 
-    //find by API id
+    //find by API apiId
     @GetMapping("/find/apiId")
     public String findByApiIdForm(Model model) {
         model.addAttribute("entityType", "Move");

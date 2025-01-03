@@ -7,9 +7,12 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pjatk.edu.pl.pokemon_data.dto.*;
+import pjatk.edu.pl.pokemon_data.dto.ResponseDto.*;
 import pjatk.edu.pl.pokemon_data.entity.*;
+import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.repository.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -90,8 +93,8 @@ public class DatabaseService {
     }
 
     private void savePokemon(PokemonDto dto) {
-        logger.info("Saving Pokemon with API ID: {}", dto.id());
-        Optional<Pokemon> existingPokemon = pokemonRepository.findByApiId(dto.id());
+        logger.info("Saving Pokemon with API ID: {}", dto.apiId());
+        Optional<Pokemon> existingPokemon = pokemonRepository.findByApiId(dto.apiId());
 
         if (existingPokemon.isPresent()) {
             setPokemonValues(dto, existingPokemon.orElse(null));
@@ -102,23 +105,33 @@ public class DatabaseService {
     }
 
     private void setPokemonValues(PokemonDto dto, Pokemon pokemon) {
-        pokemon.setApiId(dto.id());
+        pokemon.setApiId(dto.apiId());
         pokemon.setName(dto.name());
         pokemon.setHeight(dto.height());
         pokemon.setWeight(dto.weight());
-        pokemon.setBaseExperience(dto.base_experience());
+        pokemon.setBaseExperience(dto.baseExperience());
 
-        List<Type> types = typeRepository.findAllById(dto.types().stream()
-                .map(TypeDto::databaseId)
-                .toList());
 
-        List<Ability> abilities = abilityRepository.findAllById(dto.abilities().stream()
-                .map(AbilityDto::databaseId)
-                .toList());
+        List<Type> types = new ArrayList<>();
+        for (TypeResponseDto typeEntry : dto.types()) {
+            Type type = typeRepository.findByName(typeEntry.getType().name())
+                    .orElseThrow(EntityNotFound::new);
+            types.add(type);
+        }
 
-        List<Move> moves = moveRepository.findAllById(dto.moves().stream()
-                .map(MoveDto::databaseId)
-                .toList());
+        List<Ability> abilities = new ArrayList<>();
+        for (AbilityResponseDto abilityEntry : dto.abilities()) {
+            Ability ability = abilityRepository.findByName(abilityEntry.getAbility().name())
+                    .orElseThrow(EntityNotFound::new);
+            abilities.add(ability);
+        }
+
+        List<Move> moves = new ArrayList<>();
+        for (MoveResponseDto moveEntry : dto.moves()) {
+            Move move = moveRepository.findByName(moveEntry.getMove().name())
+                    .orElseThrow(EntityNotFound::new);
+            moves.add(move);
+        }
 
         pokemon.setTypes(types);
         pokemon.setAbilities(abilities);
@@ -129,8 +142,8 @@ public class DatabaseService {
     }
 
     private void saveType(TypeDto dto) {
-        logger.info("Saving Type with API ID: {}", dto.id());
-        Optional<Type> existingType = typeRepository.findByApiId(dto.id());
+        logger.info("Saving Type with API ID: {}", dto.apiId());
+        Optional<Type> existingType = typeRepository.findByApiId(dto.apiId());
 
         if (existingType.isPresent()) {
             setTypeValues(dto, existingType.orElse(null));
@@ -141,15 +154,15 @@ public class DatabaseService {
     }
 
     private void setTypeValues(TypeDto dto, Type type) {
-        type.setApiId(dto.id());
+        type.setApiId(dto.apiId());
         type.setName(dto.name());
         typeRepository.save(type);
         logger.info("Successfully saved Type: {}", type.getName());
     }
 
     private void saveMove(MoveDto dto) {
-        logger.info("Saving Move with API ID: {}", dto.id());
-        Optional<Move> existingMove = moveRepository.findByApiId(dto.id());
+        logger.info("Saving Move with API ID: {}", dto.apiId());
+        Optional<Move> existingMove = moveRepository.findByApiId(dto.apiId());
 
         if (existingMove.isPresent()) {
             setMoveValues(dto, existingMove.orElse(null));
@@ -160,19 +173,27 @@ public class DatabaseService {
     }
 
     private void setMoveValues(MoveDto dto, Move move) {
-        move.setApiId(dto.id());
+        move.setApiId(dto.apiId());
         move.setName(dto.name());
         move.setPower(dto.power());
         move.setAccuracy(dto.accuracy());
         move.setPp(dto.pp());
+
+        if (dto.type() != null) {
+            Type type = typeRepository.findByName(dto.type().name())
+                    .orElseThrow(EntityNotFound::new);
+            move.setType(type);
+        } else {
+            logger.warn("Type is null for Move: {}", move.getName());
+        }
 
         moveRepository.save(move);
         logger.info("Successfully saved Move: {}", move.getName());
     }
 
     private void saveAbility(AbilityDto dto) {
-        logger.info("Saving Ability with API ID: {}", dto.id());
-        Optional<Ability> existingAbility = abilityRepository.findByApiId(dto.id());
+        logger.info("Saving Ability with API ID: {}", dto.apiId());
+        Optional<Ability> existingAbility = abilityRepository.findByApiId(dto.apiId());
 
         if (existingAbility.isPresent()) {
             setMoveValues(dto, existingAbility.orElse(null));
@@ -183,15 +204,15 @@ public class DatabaseService {
     }
 
     private void setMoveValues(AbilityDto dto, Ability ability) {
-        ability.setApiId(dto.id());
+        ability.setApiId(dto.apiId());
         ability.setName(dto.name());
         abilityRepository.save(ability);
         logger.info("Successfully saved Ability: {}", ability.getName());
     }
 
     private void saveItem(ItemDto dto) {
-        logger.info("Saving Item with API ID: {}", dto.id());
-        Optional<Item> existingItem = itemRepository.findByApiId(dto.id());
+        logger.info("Saving Item with API ID: {}", dto.apiId());
+        Optional<Item> existingItem = itemRepository.findByApiId(dto.apiId());
         if (existingItem.isPresent()) {
             setItemValues(dto, existingItem.orElse(null));
         } else {
@@ -201,7 +222,7 @@ public class DatabaseService {
     }
 
     private void setItemValues(ItemDto dto, Item item) {
-        item.setApiId(dto.id());
+        item.setApiId(dto.apiId());
         item.setName(dto.name());
         itemRepository.save(item);
         logger.info("Successfully saved Item: {}", item.getName());

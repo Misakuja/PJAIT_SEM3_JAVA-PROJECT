@@ -3,8 +3,8 @@ package pjatk.edu.pl.pokemon_api.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.jpa.repository.JpaRepository;
-import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
-import pjatk.edu.pl.pokemon_api.exception.InvalidInput;
+import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
+import pjatk.edu.pl.pokemon_data.exception.InvalidInput;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -61,7 +61,7 @@ public abstract class BaseService<T> {
         inputToLowercase(entity);
 
         try {
-            Field idField = entity.getClass().getDeclaredField("id");
+            Field idField = entity.getClass().getDeclaredField("apiId");
             idField.setAccessible(true);
             idField.set(entity, id);
         } catch (NoSuchFieldException | IllegalAccessException e) {

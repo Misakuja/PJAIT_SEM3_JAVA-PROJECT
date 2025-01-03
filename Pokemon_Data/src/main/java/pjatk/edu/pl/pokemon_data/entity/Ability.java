@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -14,4 +16,7 @@ public class Ability {
 
     private Integer apiId; // API ID
     private String name;
+
+    @ManyToMany(mappedBy = "abilities")
+    private List<Pokemon> pokemons;
 }

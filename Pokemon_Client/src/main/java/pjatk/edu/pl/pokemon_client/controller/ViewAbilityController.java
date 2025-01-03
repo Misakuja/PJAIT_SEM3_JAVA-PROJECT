@@ -2,7 +2,10 @@ package pjatk.edu.pl.pokemon_client.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewAbilityService;
 import pjatk.edu.pl.pokemon_data.entity.Ability;
 
@@ -72,7 +75,7 @@ public class ViewAbilityController {
         return "redirect:/client/ability";
     }
 
-    //find by id
+    //find by apiId
     @GetMapping("/find/id")
     public String findByIdForm(Model model) {
         model.addAttribute("entityType", "Ability");
@@ -88,7 +91,7 @@ public class ViewAbilityController {
         return "displayList";
     }
 
-    //find by API id
+    //find by API apiId
     @GetMapping("/find/apiId")
     public String findByApiIdForm(Model model) {
         model.addAttribute("entityType", "Ability");
