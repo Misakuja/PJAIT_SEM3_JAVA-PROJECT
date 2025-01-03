@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Find By Height Form</title>
+    <link th:href="@{/form.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="#" th:action="@{/client/pokemon/find/height}" th:object="${pokemon}" method="POST">
-    <label for="pokemonHeight">Height:</label>
-    <input type="number" id="pokemonHeight" name="pokemonHeight" th:field="*{height}"/>
-    <input type="submit" id="submit" value="Submit">
-</form>
+<h1>Find Pokémon By Height Form</h1>
+<div class="box">
+    <form action="#" th:action="@{/client/pokemon/find/height}" th:object="${pokemon}" method="POST">
+        <label for="pokemonHeight">Height:</label>
+        <input type="number" id="pokemonHeight" name="pokemonHeight" th:field="*{height}"/>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</div>
 </body>
 </html>

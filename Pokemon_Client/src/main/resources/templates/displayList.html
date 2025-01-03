@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Display List</title>
+    <link th:href="@{/list.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <table class="table">
+<h1 th:text="${entityType + ' List'}"></h1>
+    <table class="table" id="table">
         <thead th:unless="${entityType == 'Pokemon'} OR ${entityType == 'Move'}">
         <tr>
             <th>ID</th>

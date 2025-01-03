@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link th:href="@{/homepage.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Welcome to the Pokémon API!</h1>
+    <img src="https://i.imgur.com/GlafM2N.png" alt="Capybara Image" class="headerImage">
+</header>
+<div class="gridContainer">
+    <div class="box">
+        <div class="buttonContainer" id="viewAllButtons">
+            <div class="legend">View All Buttons</div>
+            <button onclick="location.href = 'client/pokemon'">Pokémons</button>
+            <button onclick="location.href = '/client/ability'">Abilities</button>
+            <button onclick="location.href = '/client/item'">Items</button>
+            <button onclick="location.href = '/client/move'">Moves</button>
+            <button onclick="location.href = '/client/type'">Types</button>
+        </div>
+        <div class="buttonContainer" id="deleteButtons">
+            <div class="legend">Delete Buttons</div>
+            <button onclick="location.href = 'client/pokemon/delete'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/delete'">Abilities</button>
+            <button onclick="location.href = '/client/item/delete'">Items</button>
+            <button onclick="location.href = '/client/move/delete'">Moves</button>
+            <button onclick="location.href = '/client/type/delete'">Types</button>
+        </div>
+        <div class="buttonContainer" id="addButtons">
+            <div class="legend">Add Buttons</div>
+            <button onclick="location.href = 'client/pokemon/add'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/add'">Abilities</button>
+            <button onclick="location.href = '/client/item/add'">Items</button>
+            <button onclick="location.href = '/client/move/add'">Moves</button>
+            <button onclick="location.href = '/client/type/add'">Types</button>
+        </div>
+        <div class="buttonContainer" id="updateButtons">
+            <div class="legend">Add Buttons</div>
+            <button onclick="location.href = 'client/pokemon/update'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/update'">Abilities</button>
+            <button onclick="location.href = '/client/item/update'">Items</button>
+            <button onclick="location.href = '/client/move/update'">Moves</button>
+            <button onclick="location.href = '/client/type/update'">Types</button>
+        </div>
+    </div>
+    <div class="box">
+        <div class="buttonContainer" id="findByIdButtons">
+            <div class="legend">Find By ID Buttons</div>
+            <button onclick="location.href = 'client/pokemon/find/id'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/find/id'">Abilities</button>
+            <button onclick="location.href = '/client/item/find/id'">Items</button>
+            <button onclick="location.href = '/client/move/find/id'">Moves</button>
+            <button onclick="location.href = '/client/type/find/id'">Types</button>
+        </div>
+        <div class="buttonContainer" id="findByApiIdButtons">
+            <div class="legend">Find By API ID Buttons</div>
+            <button onclick="location.href = 'client/pokemon/find/apiId'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/find/apiId'">Abilities</button>
+            <button onclick="location.href = '/client/item/find/apiId'">Items</button>
+            <button onclick="location.href = '/client/move/find/apiId'">Moves</button>
+            <button onclick="location.href = '/client/type/find/apiId'">Types</button>
+        </div>
+        <div class="buttonContainer" id="findByNameButtons">
+            <div class="legend">Find By Name Buttons</div>
+            <button onclick="location.href = 'client/pokemon/find/name'">Pokémons</button>
+            <button onclick="location.href = '/client/ability/find/name'">Abilities</button>
+            <button onclick="location.href = '/client/item/find/name'">Items</button>
+            <button onclick="location.href = '/client/move/find/name'">Moves</button>
+            <button onclick="location.href = '/client/type/find/name'">Types</button>
+        </div>
+    </div>
+    <div class="box">
+        <div class="buttonContainer" id="findMoveByIdButtons">
+            <div class="legend">Find Moves By Buttons</div>
+            <button onclick="location.href = 'client/move/find/accuracy'">Accuracy</button>
+            <button onclick="location.href = '/client/move/find/power'">Power</button>
+            <button onclick="location.href = '/client/move/find/pp'">PP</button>
+        </div>
+        <div class="buttonContainer" id="findPokemonByButtons">
+            <div class="legend">Find Pokémons By Buttons</div>
+            <button onclick="location.href = 'client/pokemon/find/baseExperience'">Base Experience</button>
+            <button onclick="location.href = '/client/pokemon/find/height'">Height</button>
+            <button onclick="location.href = '/client/pokemon/find/weight'">Weight</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

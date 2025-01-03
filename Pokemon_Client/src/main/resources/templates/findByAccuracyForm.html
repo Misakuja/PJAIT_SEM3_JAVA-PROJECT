@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Find By Accuracy Form</title>
+    <link th:href="@{/form.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="#" th:action="@{/client/move/find/accuracy}" th:object="${move}" method="POST">
-    <label for="moveAccuracy">Accuracy:</label>
-    <input type="number" id="moveAccuracy" name="moveAccuracy" th:field="*{accuracy}"/>
-    <input type="submit" id="Submit" value="Submit">
-</form>
+<h1>Find Move By Accuracy Form</h1>
+<div class="box">
+    <form action="#" th:action="@{/client/move/find/accuracy}" th:object="${move}" method="POST">
+        <label for="moveAccuracy">Accuracy:</label>
+        <input type="number" id="moveAccuracy" name="moveAccuracy" th:field="*{accuracy}"/>
+        <input type="submit" id="Submit" value="Submit">
+    </form>
+</div>
 </body>
 </html>

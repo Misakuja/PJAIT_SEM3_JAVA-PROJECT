@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Find By API API ID Form</title>
+    <meta charset="UTF-8">
+    <title>Find By API ID Form</title>
+    <link th:href="@{/form.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/find/apiId}" th:object="${ability}" method="POST">
-  <label for="abilityApiId">API ID:</label>
-  <input type="number" id="abilityApiId" name="abilityApiId" th:field="*{apiId}"/>
-  <input type="submit" id="abilitySubmit" value="Submit">
-</form>
+<h1 th:text="${'Find ' + entityType + ' By API ID Form'}"></h1>
+<div class="box">
+    <form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/find/apiId}" th:object="${ability}"
+          method="POST">
+        <label for="abilityApiId">API ID:</label>
+        <input type="number" id="abilityApiId" name="abilityApiId" th:field="*{apiId}"/>
+        <input type="submit" id="abilitySubmit" value="Submit">
+    </form>
 
-<form th:if="${entityType == 'Item'}" action="#" th:action="@{/client/item/find/apiId}" th:object="${item}" method="POST">
-  <label for="itemApiId">API ID:</label>
-  <input type="number" id="itemApiId" name="itemApiId" th:field="*{apiId}"/>
-  <input type="submit" id="itemSubmit" value="Submit">
-</form>
+    <form th:if="${entityType == 'Item'}" action="#" th:action="@{/client/item/find/apiId}" th:object="${item}"
+          method="POST">
+        <label for="itemApiId">API ID:</label>
+        <input type="number" id="itemApiId" name="itemApiId" th:field="*{apiId}"/>
+        <input type="submit" id="itemSubmit" value="Submit">
+    </form>
 
-<form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/find/apiId}" th:object="${move}" method="POST">
-  <label for="moveApiId">API ID:</label>
-  <input type="number" id="moveApiId" name="moveApiId" th:field="*{apiId}"/>
-  <input type="submit" id="moveSubmit" value="Submit">
-</form>
+    <form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/find/apiId}" th:object="${move}"
+          method="POST">
+        <label for="moveApiId">API ID:</label>
+        <input type="number" id="moveApiId" name="moveApiId" th:field="*{apiId}"/>
+        <input type="submit" id="moveSubmit" value="Submit">
+    </form>
 
-<form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/find/apiId}" th:object="${pokemon}" method="POST">
-  <label for="pokemonApiId">API ID:</label>
-  <input type="number" id="pokemonApiId" name="pokemonApiId" th:field="*{apiId}"/>
-  <input type="submit" id="pokemonSubmit" value="Submit">
-</form>
+    <form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/find/apiId}" th:object="${pokemon}"
+          method="POST">
+        <label for="pokemonApiId">API ID:</label>
+        <input type="number" id="pokemonApiId" name="pokemonApiId" th:field="*{apiId}"/>
+        <input type="submit" id="pokemonSubmit" value="Submit">
+    </form>
 
-<form th:if="${entityType == 'Type'}" action="#" th:action="@{/client/type/find/apiId}" th:object="${type}" method="POST">
-  <label for="typeApiId">API ID:</label>
-  <input type="number" id="typeApiId" name="typeApiId" th:field="*{apiId}"/>
-  <input type="submit" id="typeSubmit" value="Submit">
-</form>
+    <form th:if="${entityType == 'Type'}" action="#" th:action="@{/client/type/find/apiId}" th:object="${type}"
+          method="POST">
+        <label for="typeApiId">API ID:</label>
+        <input type="number" id="typeApiId" name="typeApiId" th:field="*{apiId}"/>
+        <input type="submit" id="typeSubmit" value="Submit">
+    </form>
+</div>
 </body>
 </html>

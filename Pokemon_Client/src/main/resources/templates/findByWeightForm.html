@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Find By Weight Form</title>
+    <link th:href="@{/form.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="#" th:action="@{/client/pokemon/find/weight}" th:object="${pokemon}" method="POST">
-    <label for="pokemonWeight">Weight:</label>
-    <input type="number" id="pokemonWeight" name="pokemonWeight" th:field="*{weight}"/>
-    <input type="submit" id="submit" value="Submit">
-</form>
+<h1>Find Pokémon By Weight Form</h1>
+<div class="box">
+    <form action="#" th:action="@{/client/pokemon/find/weight}" th:object="${pokemon}" method="POST">
+        <label for="pokemonWeight">Weight:</label>
+        <input type="number" id="pokemonWeight" name="pokemonWeight" th:field="*{weight}"/>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</div>
 </body>
 </html>
