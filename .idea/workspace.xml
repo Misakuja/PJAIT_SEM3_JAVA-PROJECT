@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Homepage added">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/homepage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/static/list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/addForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/deleteForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/deleteForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByApiIdForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByApiIdForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByBaseExperienceForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByBaseExperienceForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByHeightForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByHeightForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByIdForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByIdForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByNameForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByNameForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByWeightForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByWeightForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/updateForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/updateForm.html" afterDir="false" />
-    </list>
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Back To Homepage button added. CSS, Logging, Client Module complete for now" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,7 +229,7 @@
       <workItem from="1735824113338" duration="9945000" />
       <workItem from="1735834786194" duration="651000" />
       <workItem from="1735835442957" duration="9891000" />
-      <workItem from="1735895387555" duration="9110000" />
+      <workItem from="1735895387555" duration="9166000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -359,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735904195184</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Back To Homepage button added. CSS, Logging, Client Module complete for now">
+      <option name="closed" value="true" />
+      <created>1735904732818</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735904732818</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +360,8 @@
     <MESSAGE value="Client module in progress. All methods work and added apart from join tables." />
     <MESSAGE value="Logging added" />
     <MESSAGE value="Homepage added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homepage added" />
+    <MESSAGE value="Back To Homepage button added. CSS, Logging, Client Module complete for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Back To Homepage button added. CSS, Logging, Client Module complete for now" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
