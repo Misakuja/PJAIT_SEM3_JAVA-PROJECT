@@ -1,5 +1,7 @@
 package pjatk.edu.pl.pokemon_integration.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -16,6 +18,7 @@ import java.util.function.Consumer;
 
 @Service
 public class DatabaseService {
+    private static final Logger logger = LoggerFactory.getLogger(DatabaseService.class);
     private final RestTemplate restTemplate;
     private final PokemonRepository pokemonRepository;
     private final AbilityRepository abilityRepository;
@@ -35,38 +38,43 @@ public class DatabaseService {
     @Cacheable(value = "pokemons")
     public void fetchAndSavePokemons() {
         String url = "https://pokeapi.co/api/v2/pokemon/";
+        logger.info("Fetching and saving Pokemons from URL: {}", url);
         fetchAndSave(url, PokemonDto.class, this::savePokemon);
     }
 
     @Cacheable(value = "types")
     public void fetchAndSaveTypes() {
         String url = "https://pokeapi.co/api/v2/type/";
+        logger.info("Fetching and saving Types from URL: {}", url);
         fetchAndSave(url, TypeDto.class, this::saveType);
     }
 
     @Cacheable(value = "moves")
     public void fetchAndSaveMoves() {
             String url = "https://pokeapi.co/api/v2/move/";
-            fetchAndSave(url, MoveDto.class, this::saveMove);
+        logger.info("Fetching and saving Moves from URL: {}", url);
+        fetchAndSave(url, MoveDto.class, this::saveMove);
     }
 
     @Cacheable(value = "items")
     public void fetchAndSaveItems() {
         String url = "https://pokeapi.co/api/v2/item/";
+        logger.info("Fetching and saving Items from URL: {}", url);
         fetchAndSave(url, ItemDto.class, this::saveItem);
     }
 
     @Cacheable(value = "abilities")
     public void fetchAndSaveAbilities() {
         String url = "https://pokeapi.co/api/v2/ability/";
+        logger.info("Fetching and saving Abilities from URL: {}", url);
         fetchAndSave(url, AbilityDto.class, this::saveAbility);
     }
 
     private <T> void fetchAndSave(String url, Class<T> dtoClass, Consumer<T> saveMethod) {
         ResponseDto response;
         do {
+            logger.info("Fetching data from URL: {}", url);
             response = restTemplate.getForObject(url, ResponseDto.class);
-
             if (response != null) {
                 List<ResultDto> results = response.getResults();
                 for (ResultDto result : results) {
@@ -82,6 +90,7 @@ public class DatabaseService {
     }
 
     private void savePokemon(PokemonDto dto) {
+        logger.info("Saving Pokemon with API ID: {}", dto.id());
         Optional<Pokemon> existingPokemon = pokemonRepository.findByApiId(dto.id());
 
         if (existingPokemon.isPresent()) {
@@ -116,9 +125,11 @@ public class DatabaseService {
         pokemon.setMoves(moves);
 
         pokemonRepository.save(pokemon);
+        logger.info("Successfully saved Pokemon: {}", pokemon.getName());
     }
 
     private void saveType(TypeDto dto) {
+        logger.info("Saving Type with API ID: {}", dto.id());
         Optional<Type> existingType = typeRepository.findByApiId(dto.id());
 
         if (existingType.isPresent()) {
@@ -133,9 +144,11 @@ public class DatabaseService {
         type.setApiId(dto.id());
         type.setName(dto.name());
         typeRepository.save(type);
+        logger.info("Successfully saved Type: {}", type.getName());
     }
 
     private void saveMove(MoveDto dto) {
+        logger.info("Saving Move with API ID: {}", dto.id());
         Optional<Move> existingMove = moveRepository.findByApiId(dto.id());
 
         if (existingMove.isPresent()) {
@@ -154,9 +167,11 @@ public class DatabaseService {
         move.setPp(dto.pp());
 
         moveRepository.save(move);
+        logger.info("Successfully saved Move: {}", move.getName());
     }
 
     private void saveAbility(AbilityDto dto) {
+        logger.info("Saving Ability with API ID: {}", dto.id());
         Optional<Ability> existingAbility = abilityRepository.findByApiId(dto.id());
 
         if (existingAbility.isPresent()) {
@@ -171,9 +186,11 @@ public class DatabaseService {
         ability.setApiId(dto.id());
         ability.setName(dto.name());
         abilityRepository.save(ability);
+        logger.info("Successfully saved Ability: {}", ability.getName());
     }
 
     private void saveItem(ItemDto dto) {
+        logger.info("Saving Item with API ID: {}", dto.id());
         Optional<Item> existingItem = itemRepository.findByApiId(dto.id());
         if (existingItem.isPresent()) {
             setItemValues(dto, existingItem.orElse(null));
@@ -187,6 +204,7 @@ public class DatabaseService {
         item.setApiId(dto.id());
         item.setName(dto.name());
         itemRepository.save(item);
+        logger.info("Successfully saved Item: {}", item.getName());
     }
 
 }

@@ -1,10 +1,12 @@
 package pjatk.edu.pl.pokemon_api.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_api.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_api.exception.EntityNotFound;
-import pjatk.edu.pl.pokemon_data.entity.Ability;
+
 import pjatk.edu.pl.pokemon_data.entity.Item;
 import pjatk.edu.pl.pokemon_data.repository.ItemRepository;
 
@@ -13,6 +15,7 @@ import java.util.Optional;
 
 @Service
 public class ItemService extends BaseService<Item> {
+    private static final Logger logger = LoggerFactory.getLogger(ItemService.class);
     private final ItemRepository itemRepository;
 
     @Autowired
@@ -44,15 +47,28 @@ public class ItemService extends BaseService<Item> {
     }
 
     public Item getItemByApiId(Integer apiId) {
-        return itemRepository.findByApiId(apiId).orElseThrow(EntityNotFound::new);
+        logger.info("Fetching item by API ID: {}", apiId);
+        return itemRepository.findByApiId(apiId).orElseThrow(() -> {
+            logger.warn("Item with API ID: {} not found.", apiId);
+            return new EntityNotFound();
+        });
     }
 
     public Item getItemByName(String name) {
-        return itemRepository.findByName(name).orElseThrow(EntityNotFound::new);
+        logger.info("Fetching item by name: {}", name);
+        return itemRepository.findByName(name).orElseThrow(() -> {
+            logger.warn("Item with name: {} not found.", name);
+            return new EntityNotFound();
+        });
     }
 
     private void checkIfItemAlreadyExists(Item item) {
+        logger.info("Checking if item already exists: {}", item);
         Optional<Item> existingItem = itemRepository.findByName(item.getName());
-        if (existingItem.isPresent()) throw new EntityAlreadyExists();
+        if (existingItem.isPresent()) {
+            logger.warn("Item with name: {} already exists.", item.getName());
+            throw new EntityAlreadyExists();
+        }
+        logger.info("Item with name: {} does not exist. Proceeding to add.", item.getName());
     }
 }

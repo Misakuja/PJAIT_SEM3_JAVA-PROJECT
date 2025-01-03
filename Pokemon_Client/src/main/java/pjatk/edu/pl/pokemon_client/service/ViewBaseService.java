@@ -79,7 +79,7 @@ public abstract class ViewBaseService {
                     .retrieve()
                     .toBodilessEntity();
         } catch (Exception e) {
-            logger.error("Failed to patch entity. {}", String.valueOf(e));
+            logger.warn("Failed to patch entity. {}", String.valueOf(e));
         }
         logger.info("Successfully updated entity with ID: {} using values: {}", id, entity);
     }
@@ -102,7 +102,7 @@ public abstract class ViewBaseService {
 
     protected <T> List<T> getEntityListByField(String url, Object field) {
         logger.info("Attempting to get all entities by field. Using value: {}", field);
-        List<T> entityList = null;
+        List<T> entityList;
 
         try {
             entityList = restClient.get()
@@ -118,6 +118,7 @@ public abstract class ViewBaseService {
 
         } catch (Exception e) {
             logger.error("Failed to get entities by field. Using value {}. {}", field, String.valueOf(e));
+            throw e;
         }
         logger.info("Successfully got all entities by field, using value {}.", field);
         return entityList;
