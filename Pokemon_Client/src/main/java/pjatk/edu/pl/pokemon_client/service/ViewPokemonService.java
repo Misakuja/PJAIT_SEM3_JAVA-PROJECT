@@ -30,15 +30,15 @@ public class ViewPokemonService extends ViewBaseService {
     }
 
     public Pokemon getPokemonById(Long id) {
-        return getEntityByField("/pokemon/apiId/" + id, id, new ParameterizedTypeReference<Pokemon>() {});
+        return getEntityByField("/pokemon/apiId/" + id, id, new ParameterizedTypeReference<>() {});
     }
 
     public Pokemon getPokemonByApiId(Integer apiId) {
-        return getEntityByField("/pokemon/apiId/" + apiId, apiId, new ParameterizedTypeReference<Pokemon>() {});
+        return getEntityByField("/pokemon/apiId/" + apiId, apiId, new ParameterizedTypeReference<>() {});
     }
 
     public Pokemon getPokemonByName(String name) {
-        return getEntityByField("/pokemon/name/" + name, name, new ParameterizedTypeReference<Pokemon>() {});
+        return getEntityByField("/pokemon/name/" + name, name, new ParameterizedTypeReference<>() {});
     }
 
     public List<Pokemon> getPokemonByBaseExperience(Integer baseExperience) {

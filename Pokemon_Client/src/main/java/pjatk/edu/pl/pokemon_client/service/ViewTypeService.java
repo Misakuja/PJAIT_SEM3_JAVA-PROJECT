@@ -30,14 +30,14 @@ public class ViewTypeService extends ViewBaseService {
     }
 
     public Type getTypeById(Long id) {
-        return getEntityByField("/type/apiId/" + id, id, new ParameterizedTypeReference<Type>() {});
+        return getEntityByField("/type/apiId/" + id, id, new ParameterizedTypeReference<>() {});
     }
 
     public Type getTypeByApiId(Integer apiId) {
-        return getEntityByField("/type/apiId/" + apiId, apiId, new ParameterizedTypeReference<Type>() {});
+        return getEntityByField("/type/apiId/" + apiId, apiId, new ParameterizedTypeReference<>() {});
     }
 
     public Type getTypeByName(String name) {
-        return getEntityByField("/type/name/" + name, name, new ParameterizedTypeReference<Type>() {});
+        return getEntityByField("/type/name/" + name, name, new ParameterizedTypeReference<>() {});
     }
 }

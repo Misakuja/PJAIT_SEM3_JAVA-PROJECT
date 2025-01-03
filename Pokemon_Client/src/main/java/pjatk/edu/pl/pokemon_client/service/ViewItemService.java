@@ -31,14 +31,14 @@ public class ViewItemService extends ViewBaseService {
     }
 
     public Item getItemById(Long id) {
-        return getEntityByField("/item/apiId/" + id, id, new ParameterizedTypeReference<Item>() {});
+        return getEntityByField("/item/apiId/" + id, id, new ParameterizedTypeReference<>() {});
     }
 
     public Item getItemByApiId(Integer apiId) {
-        return getEntityByField("/item/apiId/" + apiId, apiId, new ParameterizedTypeReference<Item>() {});
+        return getEntityByField("/item/apiId/" + apiId, apiId, new ParameterizedTypeReference<>() {});
     }
 
     public Item getItemByName(String name) {
-        return getEntityByField("/item/name/" + name, name, new ParameterizedTypeReference<Item>() {});
+        return getEntityByField("/item/name/" + name, name, new ParameterizedTypeReference<>() {});
     }
 }

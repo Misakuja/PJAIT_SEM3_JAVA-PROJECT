@@ -31,15 +31,15 @@ public class ViewAbilityService extends ViewBaseService {
     }
 
     public Ability getAbilityById(Long id) {
-        return getEntityByField("/ability/apiId/" + id, id, new ParameterizedTypeReference<Ability>() {});
+        return getEntityByField("/ability/apiId/" + id, id, new ParameterizedTypeReference<>() {});
     }
 
     public Ability getAbilityByApiId(Integer apiId) {
-        return getEntityByField("/ability/apiId/" + apiId, apiId, new ParameterizedTypeReference<Ability>() {});
+        return getEntityByField("/ability/apiId/" + apiId, apiId, new ParameterizedTypeReference<>() {});
     }
 
     public Ability getAbilityByName(String name) {
-        return getEntityByField("/ability/name/" + name, name, new ParameterizedTypeReference<Ability>() {});
+        return getEntityByField("/ability/name/" + name, name, new ParameterizedTypeReference<>() {});
     }
 
 }

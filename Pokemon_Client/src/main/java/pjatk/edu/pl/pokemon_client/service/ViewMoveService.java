@@ -31,15 +31,15 @@ public class ViewMoveService extends ViewBaseService {
     }
 
     public Move getMoveById(Long id) {
-        return getEntityByField("/move/apiId/" + id, id, new ParameterizedTypeReference<Move>() {});
+        return getEntityByField("/move/apiId/" + id, id, new ParameterizedTypeReference<>() {});
     }
 
     public Move getMoveByApiId(Integer apiId) {
-        return getEntityByField("/move/apiId/" + apiId, apiId, new ParameterizedTypeReference<Move>() {});
+        return getEntityByField("/move/apiId/" + apiId, apiId, new ParameterizedTypeReference<>() {});
     }
 
     public Move getMoveByName(String name) {
-        return getEntityByField("/move/name/" + name, name, new ParameterizedTypeReference<Move>() {});
+        return getEntityByField("/move/name/" + name, name, new ParameterizedTypeReference<>() {});
     }
 
     public List<Move> getMoveByAccuracy(Integer accuracy) {
