@@ -7,6 +7,9 @@
 </head>
 <body>
 <h1 th:text="${'Find ' + entityType + ' By API ID Form'}"></h1>
+<div class="buttonBox">
+    <button onclick="location.href = '/'">Back To Homepage</button>
+</div>
 <div class="box">
     <form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/find/apiId}" th:object="${ability}"
           method="POST">

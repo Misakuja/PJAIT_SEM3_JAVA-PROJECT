@@ -7,6 +7,9 @@
 </head>
 <body>
 <h1>Find Move By Accuracy Form</h1>
+<div class="buttonBox">
+    <button onclick="location.href = '/'">Back To Homepage</button>
+</div>
 <div class="box">
     <form action="#" th:action="@{/client/move/find/accuracy}" th:object="${move}" method="POST">
         <label for="moveAccuracy">Accuracy:</label>

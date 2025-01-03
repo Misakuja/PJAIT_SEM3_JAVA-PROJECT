@@ -7,7 +7,7 @@ body {
 }
 h1 {
     font-size: 24px;
-    margin: 0 0 50px 0;
+    margin: 0 0 15px 0;
     padding: 20px;
     text-align: center;
     font-style: italic;
@@ -40,6 +40,12 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+.buttonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 button {
     display: inline-block;
     margin: 10px auto;
@@ -54,8 +60,4 @@ button {
 
 button:hover {
     background-color: #845593;
-}
-
-.button-container {
-    text-align: center;
 }
