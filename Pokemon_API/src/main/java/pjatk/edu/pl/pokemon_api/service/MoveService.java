@@ -26,17 +26,6 @@ public class MoveService extends BaseService<Move> {
         return getAllEntities();
     }
 
-    public List<Move> getAllMovesByTypeId(Long typeId) {
-        logger.info("Fetching all moves for type with id: {}", typeId);
-        List<Move> moveList = moveRepository.findAllByTypeId(typeId);
-        if (moveList.isEmpty()) {
-            logger.warn("No moves found for type with id: {}", typeId);
-            throw new EntityNotFound();
-        }
-        logger.info("Successfully fetched {} moves for type with id: {}", moveList.size(), typeId);
-        return moveList;
-    }
-
     public void deleteMove(Long id) {
         deleteEntity(id);
     }
@@ -105,6 +94,17 @@ public class MoveService extends BaseService<Move> {
             logger.info("Successfully fetched {} moves with PP: {}", moveList.size(), pp);
             return moveList;
         }
+    }
+
+    public List<Move> getAllMovesByTypeId(Long typeId) {
+        logger.info("Fetching all moves for type with id: {}", typeId);
+        List<Move> moveList = moveRepository.findAllByTypeId(typeId);
+        if (moveList.isEmpty()) {
+            logger.warn("No moves found for type with id: {}", typeId);
+            throw new EntityNotFound();
+        }
+        logger.info("Successfully fetched {} moves for type with id: {}", moveList.size(), typeId);
+        return moveList;
     }
 
     private void checkIfMoveAlreadyExists(Move move) {

@@ -39,7 +39,6 @@
         <input type="submit" id="itemSubmit" value="Submit">
     </form>
 
-    <!--TODO: ONCE FIXED, ADD TYPE ADDITION -->
     <form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/update}" th:object="${move}"
           method="POST">
         <label for="moveId">ID to update:</label>
@@ -63,7 +62,6 @@
         <input type="submit" id="moveSubmit" value="Submit">
     </form>
 
-    <!--TODO: ONCE FIXED, ADD TYPE / MOVE / ABILITY ADDITION (MAYBE) -->
     <form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/update}" th:object="${pokemon}"
           method="POST">
         <label for="pokemonId">ID to update:</label>

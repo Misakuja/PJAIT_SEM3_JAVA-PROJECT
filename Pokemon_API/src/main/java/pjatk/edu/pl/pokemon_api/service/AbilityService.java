@@ -70,5 +70,4 @@ public class AbilityService extends BaseService<Ability> {
         }
         logger.info("Ability with name: {} does not exist. Proceeding to add.", ability.getName());
     }
-
 }
