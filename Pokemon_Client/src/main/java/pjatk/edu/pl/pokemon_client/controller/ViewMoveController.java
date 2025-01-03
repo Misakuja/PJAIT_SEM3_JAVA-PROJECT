@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewMoveService;
 import pjatk.edu.pl.pokemon_data.entity.Move;
+import pjatk.edu.pl.pokemon_data.entity.Type;
 
 import java.util.List;
 
@@ -22,10 +23,26 @@ public class ViewMoveController {
 
     @GetMapping("")
     public String getAllAbilities(Model model) {
-        List<Move> abilities = viewMoveService.getAllMoves();
+        List<Move> moves = viewMoveService.getAllMoves();
 
         model.addAttribute("entityType", "Move");
-        model.addAttribute("entities", abilities);
+        model.addAttribute("entities", moves);
+        return "displayList";
+    }
+
+    //get all types
+    @GetMapping("/get/type")
+    public String getAllMovesByTypeId(Model model) {
+        model.addAttribute("entityType", "All Moves Of Type");
+        model.addAttribute("type", new Type());
+        return "findByIdForm";
+    }
+
+    @PostMapping("/get/type")
+    public String getAllMovesByTypeId(@ModelAttribute Type type, Model model) {
+        Long inputId = type.getId();
+        model.addAttribute("entityType", "All Moves Of Type");
+        model.addAttribute("entities", viewMoveService.getAllMovesByTypeId(inputId));
         return "displayList";
     }
 
@@ -73,7 +90,7 @@ public class ViewMoveController {
         return "redirect:/client/move";
     }
 
-    //find by apiId
+    //find by Id
     @GetMapping("/find/id")
     public String findByIdForm(Model model) {
         model.addAttribute("entityType", "Move");
@@ -89,7 +106,7 @@ public class ViewMoveController {
         return "displayList";
     }
 
-    //find by API apiId
+    //find by API Id
     @GetMapping("/find/apiId")
     public String findByApiIdForm(Model model) {
         model.addAttribute("entityType", "Move");

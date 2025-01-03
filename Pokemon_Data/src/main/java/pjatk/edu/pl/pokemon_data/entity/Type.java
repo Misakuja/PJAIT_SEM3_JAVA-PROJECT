@@ -1,10 +1,11 @@
 package pjatk.edu.pl.pokemon_data.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 @Entity
 @Getter
@@ -16,10 +17,4 @@ public class Type {
 
     private Integer apiId; //API ID
     private String name;
-
-    @ManyToMany(mappedBy = "types")
-    private List<Pokemon> pokemons;
-
-    @OneToMany(mappedBy = "type")
-    private List<Move> moves;
 }

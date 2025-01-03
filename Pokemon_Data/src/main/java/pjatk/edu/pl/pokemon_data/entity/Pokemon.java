@@ -21,26 +21,11 @@ public class Pokemon {
     private Integer baseExperience;
 
     @ManyToMany
-    @JoinTable(
-            name = "pokemon_types",
-            joinColumns = @JoinColumn(name = "pokemon_id"),
-            inverseJoinColumns = @JoinColumn(name = "type_id")
-    )
     private List<Type> types;
 
     @ManyToMany
-    @JoinTable(
-            name = "pokemon_abilities", // Join table name
-            joinColumns = @JoinColumn(name = "pokemon_id"),
-            inverseJoinColumns = @JoinColumn(name = "ability_id")
-    )
     private List<Ability> abilities;
 
     @ManyToMany
-    @JoinTable(
-            name = "pokemon_moves",
-            joinColumns = @JoinColumn(name = "pokemon_id"),
-            inverseJoinColumns = @JoinColumn(name = "move_id")
-    )
     private List<Move> moves;
 }

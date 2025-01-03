@@ -24,6 +24,12 @@ public class MoveController {
         return ResponseEntity.ok(moves);
     }
 
+    @GetMapping("/get/type/{id}")
+    public ResponseEntity<List<Move>> getAllMovesByTypeId(@PathVariable Long id) {
+        List<Move> moves = moveService.getAllMovesByTypeId(id);
+        return ResponseEntity.ok(moves);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteMove(@PathVariable Long id) {
         moveService.deleteMove(id);

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_data.entity.Type;
 import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
+import pjatk.edu.pl.pokemon_data.repository.MoveRepository;
 import pjatk.edu.pl.pokemon_data.repository.TypeRepository;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class TypeService extends BaseService<Type> {
     private final TypeRepository typeRepository;
 
     @Autowired
-    public TypeService(TypeRepository repository) {
+    public TypeService(TypeRepository repository, MoveRepository moveRepository) {
         super(repository);
         this.typeRepository = repository;
     }
