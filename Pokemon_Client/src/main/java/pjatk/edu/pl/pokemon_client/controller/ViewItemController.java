@@ -84,6 +84,7 @@ public class ViewItemController {
     @PostMapping("/find/id")
     public String viewById(@ModelAttribute Item item, Model model) {
         Long inputId = item.getId();
+        model.addAttribute("item", new Item());
         model.addAttribute("entities", viewItemService.getItemById(inputId));
         return "displayList";
     }
@@ -99,6 +100,7 @@ public class ViewItemController {
     @PostMapping("/find/apiId")
     public String viewByApiId(@ModelAttribute Item item, Model model) {
         Integer inputApiId = item.getApiId();
+        model.addAttribute("item", new Item());
         model.addAttribute("entities", viewItemService.getItemByApiId(inputApiId));
         return "displayList";
     }

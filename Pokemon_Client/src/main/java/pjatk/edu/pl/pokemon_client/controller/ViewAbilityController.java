@@ -102,6 +102,7 @@ public class ViewAbilityController {
     @PostMapping("/find/apiId")
     public String viewByApiId(@ModelAttribute Ability ability, Model model) {
         Integer inputApiId = ability.getApiId();
+        model.addAttribute("entityType", "Ability");
         model.addAttribute("entities", viewAbilityService.getAbilityByApiId(inputApiId));
         return "displayList";
     }

@@ -82,25 +82,6 @@ public abstract class BaseService<T> {
         });
     }
 
-//    protected List<T> getEntityByField(String fieldName, Object value) {
-//        List<T> entities = repository.findAll();
-//        List<T> foundEntities = new ArrayList<>();
-//        for (T entity : entities) {
-//            try {
-//                Field field = entity.getClass().getDeclaredField(fieldName);
-//                field.setAccessible(true);
-//                Object fieldValue = field.get(entity);
-//                if (fieldValue != null && fieldValue.equals(value)) {
-//                    foundEntities.add(entity);
-//                }
-//            } catch (NoSuchFieldException | IllegalAccessException e) {
-//                throw new RuntimeException("Error accessing field " + fieldName, e);
-//            }
-//        }
-//        if (foundEntities.isEmpty()) throw new EntityNotFound();
-//        else return foundEntities;
-//    }
-
     private void validateEntityInput(T entity) {
         logger.info("Validating entity input: {}", entity);
         Field[] fields = entity.getClass().getDeclaredFields();

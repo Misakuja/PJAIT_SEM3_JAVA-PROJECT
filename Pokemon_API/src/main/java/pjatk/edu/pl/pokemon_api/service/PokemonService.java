@@ -108,9 +108,6 @@ public class PokemonService extends BaseService<Pokemon> {
         logger.info("Pokémon with name: {} does not exist. Proceeding to add.", pokemon.getName());
     }
 
-//    public List<Pokemon> getPokemonByWeight(int weight) {
-//        return getEntityByField("weight", weight);
-//    }
 }
 
 
