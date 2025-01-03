@@ -4,7 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pjatk.edu.pl.pokemon_data.entity.Ability;
+import pjatk.edu.pl.pokemon_data.entity.Move;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.entity.Type;
 import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.repository.PokemonRepository;
@@ -26,6 +29,36 @@ public class PokemonService extends BaseService<Pokemon> {
 
     public List<Pokemon> getAllPokemon() {
         return getAllEntities();
+    }
+
+    public List<Ability> getAllAbilitiesByPokemonId(Long pokemonId) {
+        logger.info("Attempting to fetch all abilities of Pokémon by ID: {}", pokemonId);
+        Pokemon pokemon = pokemonRepository.findById(pokemonId).orElseThrow(() -> {
+            logger.warn("Failed to fetch all abilities of Pokémon with ID: {} not found.", pokemonId);
+            return new EntityNotFound();
+        });
+        logger.info("Successfully fetched all abilities of Pokémon by ID: {}", pokemonId);
+        return pokemon.getAbilities();
+    }
+
+    public List<Move> getAllMovesByPokemonId(Long pokemonId) {
+        logger.info("Attempting to fetch all moves of Pokémon by ID: {}", pokemonId);
+        Pokemon pokemon = pokemonRepository.findById(pokemonId).orElseThrow(() -> {
+            logger.warn("Failed to fetch all moves of Pokémon with ID: {} not found.", pokemonId);
+            return new EntityNotFound();
+        });
+        logger.info("Successfully fetched all moves of Pokémon by ID: {}", pokemonId);
+        return pokemon.getMoves();
+    }
+
+    public List<Type> getAllTypesByPokemonId(Long pokemonId) {
+        logger.info("Attempting to fetch all types of Pokémon by ID: {}", pokemonId);
+        Pokemon pokemon = pokemonRepository.findById(pokemonId).orElseThrow(() -> {
+                    logger.warn("Failed to fetch all types of Pokémon with ID: {} not found.", pokemonId);
+                    return new EntityNotFound();
+                });
+        logger.info("Successfully fetched all types of Pokémon by ID: {}", pokemonId);
+        return pokemon.getTypes();
     }
 
     public void deletePokemon(Long id) {
@@ -108,7 +141,27 @@ public class PokemonService extends BaseService<Pokemon> {
         logger.info("Pokémon with name: {} does not exist. Proceeding to add.", pokemon.getName());
     }
 
+
 }
 
 
+//    public List<Pokemon> getAllAbilitiesByPokemonId(Long id) {
+//                Pokemon pokemon = pokemonRepository.findById(pokemonId)
+//                .orElseThrow(() -> new IllegalArgumentException("Pokemon not found with ID: " + pokemonId));
+//
+//        // Get ability names
+//        return pokemon.getAbilities()
+//                .stream()
+//                .map(ability -> ability.getName())
+//                .collect(Collectors.toList());
+//    }
+//    }
+//
+//    public List<Pokemon> getAllMovesByPokemonId(Long id) {
+//        return getEntityListByField("/pokemon/weight/" + weight, weight);
+//    }
+//
+//    public List<Pokemon> getAllTypesByPokemonId(Long id) {
+//        return getEntityListByField("/pokemon/weight/" + weight, weight);
+//    }
 //TODO: get all types, get all abilities, get all moves (once tables fixed)

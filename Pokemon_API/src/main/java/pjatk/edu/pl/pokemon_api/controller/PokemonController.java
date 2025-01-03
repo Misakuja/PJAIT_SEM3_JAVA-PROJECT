@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pjatk.edu.pl.pokemon_api.service.PokemonService;
-import pjatk.edu.pl.pokemon_api.service.TypeService;
+import pjatk.edu.pl.pokemon_data.entity.Ability;
 import pjatk.edu.pl.pokemon_data.entity.Move;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.entity.Type;
@@ -26,6 +26,24 @@ public class PokemonController {
     public ResponseEntity<List<Pokemon>> getAllPokemon() {
         List<Pokemon> pokemons = pokemonService.getAllPokemon();
         return ResponseEntity.ok(pokemons);
+    }
+
+    @GetMapping("/get/ability/{id}")
+    public ResponseEntity<List<Ability>> getAllAbilitiesByPokemonId(@PathVariable Long id) {
+        List<Ability> abilities = pokemonService.getAllAbilitiesByPokemonId(id);
+        return ResponseEntity.ok(abilities);
+    }
+
+    @GetMapping("/get/move/{id}")
+    public ResponseEntity<List<Move>> getAllMovesByPokemonId(@PathVariable Long id) {
+        List<Move> moves = pokemonService.getAllMovesByPokemonId(id);
+        return ResponseEntity.ok(moves);
+    }
+
+    @GetMapping("/get/type/{id}")
+    public ResponseEntity<List<Type>> getAllTypesByPokemonId(@PathVariable Long id) {
+        List<Type> types = pokemonService.getAllTypesByPokemonId(id);
+        return ResponseEntity.ok(types);
     }
 
     @DeleteMapping("/{id}")

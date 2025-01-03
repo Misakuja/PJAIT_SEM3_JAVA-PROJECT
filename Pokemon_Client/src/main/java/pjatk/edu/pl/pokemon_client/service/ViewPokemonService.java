@@ -3,7 +3,10 @@ package pjatk.edu.pl.pokemon_client.service;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
+import pjatk.edu.pl.pokemon_data.entity.Ability;
+import pjatk.edu.pl.pokemon_data.entity.Move;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.entity.Type;
 
 import java.util.List;
 
@@ -15,6 +18,21 @@ public class ViewPokemonService extends ViewBaseService {
 
     public List<Pokemon> getAllPokemons() {
         return getAllEntities("/pokemon");
+    }
+
+    public List<Ability> getAllAbilitiesByPokemonId(Long id) {
+        String logContext = "Fetching abilities for Pokémon ID: " + id;
+        return getAllEntitiesOfRelationById("/pokemon/get/ability/" + id, new ParameterizedTypeReference<>() {}, logContext);
+    }
+
+    public List<Move> getAllMovesByPokemonId(Long id) {
+        String logContext = "Fetching moves for Pokémon ID: " + id;
+        return getAllEntitiesOfRelationById("/pokemon/get/move/" + id, new ParameterizedTypeReference<>() {}, logContext);
+    }
+
+    public List<Type> getAllTypesByPokemonId(Long id) {
+        String logContext = "Fetching types for Pokémon ID: " + id;
+        return getAllEntitiesOfRelationById("/pokemon/get/type/" + id, new ParameterizedTypeReference<>() {}, logContext);
     }
 
     public void deletePokemon(Long id) {
@@ -52,4 +70,5 @@ public class ViewPokemonService extends ViewBaseService {
     public List<Pokemon> getPokemonByWeight(Integer weight) {
         return getEntityListByField("/pokemon/weight/" + weight, weight);
     }
+
 }

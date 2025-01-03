@@ -6,7 +6,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import pjatk.edu.pl.pokemon_data.entity.Move;
-import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 
 import java.util.List;
 
@@ -25,22 +24,9 @@ public class ViewMoveService extends ViewBaseService {
     }
 
     public List<Move> getAllMovesByTypeId(Long typeId) {
-        logger.info("Fetching all moves for type with id: {}", typeId);
-
-        List<Move> moveList = restClient.get()
-                .uri("/move/get/type/" + typeId)
-                .retrieve()
-                .body(new ParameterizedTypeReference<>() {});
-
-        if (moveList.isEmpty()) {
-            logger.warn("No moves found for type with id: {}", typeId);
-            throw new EntityNotFound();
-        }
-
-        logger.info("Successfully fetched {} moves for type with id: {}", moveList.size(), typeId);
-        return moveList;
+        String logContext = "type ID: " + typeId;
+        return getAllEntitiesOfRelationById("/move/get/type/" + typeId, new ParameterizedTypeReference<>() {}, logContext);
     }
-
 
     public void deleteMove(Long id) {
         deleteEntity("/move/" + id, id);

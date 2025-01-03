@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pjatk.edu.pl.pokemon_client.service.ViewPokemonService;
+import pjatk.edu.pl.pokemon_data.entity.Ability;
+import pjatk.edu.pl.pokemon_data.entity.Move;
 import pjatk.edu.pl.pokemon_data.entity.Pokemon;
+import pjatk.edu.pl.pokemon_data.entity.Type;
 
 import java.util.List;
 
@@ -26,6 +29,54 @@ public class ViewPokemonController {
 
         model.addAttribute("entityType", "Pokemon");
         model.addAttribute("entities", abilities);
+        return "displayList";
+    }
+
+    //get all abilities
+    @GetMapping("/get/ability")
+    public String getAllAbilitiesByPokemonId(Model model) {
+        model.addAttribute("entityType", "All Abilities Of Pokemon");
+        model.addAttribute("ability", new Ability());
+        return "findByIdForm";
+    }
+
+    @PostMapping("/get/ability")
+    public String getAllAbilitiesByPokemonId(@ModelAttribute Ability ability, Model model) {
+        Long inputId = ability.getId();
+        model.addAttribute("entityType", "All Abilities Of Pokemon");
+        model.addAttribute("entities", viewPokemonService.getAllAbilitiesByPokemonId(inputId));
+        return "displayList";
+    }
+
+    //get all moves
+    @GetMapping("/get/move")
+    public String getAllMovesByPokemonId(Model model) {
+        model.addAttribute("entityType", "All Moves Of Pokemon");
+        model.addAttribute("move", new Move());
+        return "findByIdForm";
+    }
+
+    @PostMapping("/get/move")
+    public String getAllMovesByPokemonId(@ModelAttribute Move move, Model model) {
+        Long inputId = move.getId();
+        model.addAttribute("entityType", "All Moves Of Pokemon");
+        model.addAttribute("entities", viewPokemonService.getAllMovesByPokemonId(inputId));
+        return "displayList";
+    }
+
+    //get all types
+    @GetMapping("/get/type")
+    public String getAllTypesByPokemonId(Model model) {
+        model.addAttribute("entityType", "All Types Of Pokemon");
+        model.addAttribute("type", new Type());
+        return "findByIdForm";
+    }
+
+    @PostMapping("/get/type")
+    public String getAllTypesByPokemonId(@ModelAttribute Type type, Model model) {
+        Long inputId = type.getId();
+        model.addAttribute("entityType", "All Types Of Pokemon");
+        model.addAttribute("entities", viewPokemonService.getAllTypesByPokemonId(inputId));
         return "displayList";
     }
 

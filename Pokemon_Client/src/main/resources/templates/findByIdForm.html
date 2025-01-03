@@ -32,13 +32,6 @@
         <input type="submit" id="moveSubmit" value="Submit">
     </form>
 
-    <form th:if="${entityType == 'All Moves Of Type'}" action="#" th:action="@{/client/move/get/type}" th:object="${type}"
-          method="POST">
-        <label for="moveTypeId">ID:</label>
-        <input type="number" id="moveTypeId" name="moveTypeId" th:field="*{id}"/>
-        <input type="submit" id="moveTypeSubmit" value="Submit">
-    </form>
-
     <form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/find/id}" th:object="${pokemon}"
           method="POST">
         <label for="pokemonId">ID:</label>
@@ -51,6 +44,34 @@
         <label for="typeId">ID:</label>
         <input type="number" id="typeId" name="typeId" th:field="*{id}"/>
         <input type="submit" id="typeSubmit" value="Submit">
+    </form>
+
+    <form th:if="${entityType == 'All Moves Of Type'}" action="#" th:action="@{/client/move/get/type}" th:object="${type}"
+          method="POST">
+        <label for="moveTypeId">ID:</label>
+        <input type="number" id="moveTypeId" name="moveTypeId" th:field="*{id}"/>
+        <input type="submit" id="moveTypeSubmit" value="Submit">
+    </form>
+
+    <form th:if="${entityType == 'All Abilities Of Pokemon'}" action="#" th:action="@{/client/pokemon/get/ability}" th:object="${ability}"
+          method="POST">
+        <label for="pokemonAbilityId">ID:</label>
+        <input type="number" id="pokemonAbilityId" name="pokemonAbilityId" th:field="*{id}"/>
+        <input type="submit" id="pokemonAbilitySubmit" value="Submit">
+    </form>
+
+    <form th:if="${entityType == 'All Moves Of Pokemon'}" action="#" th:action="@{/client/pokemon/get/move}" th:object="${move}"
+          method="POST">
+        <label for="pokemonMoveId">ID:</label>
+        <input type="number" id="pokemonMoveId" name="pokemonMoveId" th:field="*{id}"/>
+        <input type="submit" id="pokemonMoveSubmit" value="Submit">
+    </form>
+
+    <form th:if="${entityType == 'All Types Of Pokemon'}" action="#" th:action="@{/client/pokemon/get/type}" th:object="${type}"
+          method="POST">
+        <label for="pokemonTypeId">ID:</label>
+        <input type="number" id="pokemonTypeId" name="pokemonTypeId" th:field="*{id}"/>
+        <input type="submit" id="pokemonTypeSubmit" value="Submit">
     </form>
 </div>
 </body>

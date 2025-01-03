@@ -43,6 +43,30 @@ public abstract class ViewBaseService {
         return entityList;
     }
 
+    protected <T> List<T> getAllEntitiesOfRelationById(String url, ParameterizedTypeReference<List<T>> typeReference, String logContext) {
+        logger.info("Fetching all entities for {}", logContext);
+
+        List<T> entityList = null;
+        try {
+            entityList = restClient.get()
+                    .uri(url)
+                    .retrieve()
+                    .body(typeReference);
+
+            if (entityList == null || entityList.isEmpty()) {
+                logger.warn("No entities found for {}", logContext);
+                throw new EntityNotFound();
+            }
+
+        } catch (Exception e) {
+            logger.error("Failed to fetch entities for {}. Error: {}", logContext, e.getMessage());
+            throw e;
+        }
+
+        logger.info("Successfully fetched {} entities for {}", entityList.size(), logContext);
+        return entityList;
+    }
+
     protected void deleteEntity(String url, Long id) {
         logger.info("Attempting to delete entity with ID: {}", id);
         try {

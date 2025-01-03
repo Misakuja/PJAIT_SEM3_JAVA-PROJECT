@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Small UI fixes">
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Get All Moves Of Type added">
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,27 +12,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewPokemonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewPokemonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByIdForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByIdForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Ability.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Ability.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Pokemon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/entity/Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/MoveRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/MoveRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Ability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/entity/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/repository/MoveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/repository/MoveRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/classes/java/main/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
@@ -417,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735927755765</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Get All Moves Of Type added">
+      <option name="closed" value="true" />
+      <created>1735931660127</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735931660127</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +437,8 @@
     <MESSAGE value="Homepage added" />
     <MESSAGE value="Back To Homepage button added. CSS, Logging, Client Module complete for now" />
     <MESSAGE value="Small UI fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small UI fixes" />
+    <MESSAGE value="Get All Moves Of Type added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get All Moves Of Type added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
