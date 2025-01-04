@@ -17,8 +17,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-//TODO: FIX JOINS SO THAT JOIN TABLES GET FILLED OUT, AS WELL AS FK IN MOVE TABLE
-
 @Service
 public class DatabaseService {
     private static final Logger logger = LoggerFactory.getLogger(DatabaseService.class);
