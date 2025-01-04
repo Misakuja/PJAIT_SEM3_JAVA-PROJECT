@@ -52,7 +52,7 @@ public class DatabaseService {
 
     @Cacheable(value = "moves")
     public void fetchAndSaveMoves() {
-            String url = "https://pokeapi.co/api/v2/move/";
+        String url = "https://pokeapi.co/api/v2/move/";
         logger.info("Fetching and saving Moves from URL: {}", url);
         fetchAndSave(url, MoveDto.class, this::saveMove);
     }

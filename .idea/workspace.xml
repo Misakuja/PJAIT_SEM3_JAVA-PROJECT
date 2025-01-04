@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Logic fixed">
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DeleteFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DeleteFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByAccuracyFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByAccuracyFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByApiIdFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByApiIdFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByBaseExperienceFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByBaseExperienceFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByHeightFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByHeightFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByIdFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByIdFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPowerFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPowerFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPpFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPpFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByWeightFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByWeightFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/UpdateFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/UpdateFormTest.java" afterDir="false" />
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="UI Tests added">
+      <change afterPath="$PROJECT_DIR$/Pokemon_Integration/src/test/java/pjatk/edu/pl/pokemon_integration/DatabaseServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,11 +13,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/java/pjatk/edu/pl/pokemon_integration/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/test/java/pjatk/edu/pl/pokemon_integration/PokemonIntegrationApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +93,9 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="f05ak34s" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -134,14 +120,17 @@
     "Gradle.FindByAccuracyFormTest.findByAccuracyFormTest.executor": "Run",
     "Gradle.FindByApiIdFormTest.findByApiIdFormTest.executor": "Run",
     "Gradle.FindByBaseExperienceFormTest.findByBaseExperienceFormTest.executor": "Run",
+    "Gradle.FindByHeightFormTest.executor": "Coverage",
     "Gradle.FindByHeightFormTest.findByHeightFormTest.executor": "Run",
-    "Gradle.FindByIdFormTest.executor": "Run",
+    "Gradle.FindByIdFormTest.executor": "Coverage",
+    "Gradle.FindByPowerFormTest.executor": "Coverage",
     "Gradle.FindByPowerFormTest.findByPowerFormTest.executor": "Run",
-    "Gradle.FindByPpFormTest.executor": "Run",
+    "Gradle.FindByPpFormTest.executor": "Coverage",
     "Gradle.FindByPpFormTest.findByPowerFormTest.executor": "Run",
-    "Gradle.FindByWeightFormTest.executor": "Run",
-    "Gradle.HomepageTest.executor": "Run",
+    "Gradle.FindByWeightFormTest.executor": "Coverage",
+    "Gradle.HomepageTest.executor": "Coverage",
     "Gradle.Pokemon_Data [:Pokemon_Data:pjatk.edu.pl.pokemon_data.Client.main()].executor": "Run",
+    "Gradle.UpdateFormTest.executor": "Coverage",
     "Gradle.UpdateFormTest.updateFormTest.executor": "Run",
     "HTTP Request.generated-requests | #2.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -202,7 +191,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.FindByHeightFormTest">
+  <component name="RunManager" selected="Spring Boot.PokemonIntegrationApplication">
     <configuration name="FindByHeightFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -424,7 +413,7 @@
       <workItem from="1735919369579" duration="3086000" />
       <workItem from="1735936072016" duration="205000" />
       <workItem from="1735977087046" duration="2285000" />
-      <workItem from="1735985166436" duration="9253000" />
+      <workItem from="1735985166436" duration="12966000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -618,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735991247519</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="UI Tests added">
+      <option name="closed" value="true" />
+      <created>1735994591145</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1735994591145</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +651,17 @@
     <MESSAGE value="Removed todo" />
     <MESSAGE value="Delete fixed, update (server side) fixed." />
     <MESSAGE value="Logic fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic fixed" />
+    <MESSAGE value="UI Tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Tests added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PokeAPI$UpdateFormTest.ic" NAME="UpdateFormTest Coverage Results" MODIFIED="1735994452726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$FindByPpFormTest.ic" NAME="FindByPpFormTest Coverage Results" MODIFIED="1735994530034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$FindByPowerFormTest.ic" NAME="FindByPowerFormTest Coverage Results" MODIFIED="1735994531888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$FindByIdFormTest.ic" NAME="FindByIdFormTest Coverage Results" MODIFIED="1735994534066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$FindByWeightFormTest.ic" NAME="FindByWeightFormTest Coverage Results" MODIFIED="1735994490400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$HomepageTest.ic" NAME="HomepageTest Coverage Results" MODIFIED="1735994498144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$FindByHeightFormTest.ic" NAME="FindByHeightFormTest Coverage Results" MODIFIED="1735994543361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
