@@ -5,9 +5,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_data.entity.Ability;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.repository.AbilityRepository;
+import pjatk.edu.pl.pokemon_data.repository.PokemonRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,11 +18,13 @@ import java.util.Optional;
 public class AbilityService extends BaseService<Ability> {
     private static final Logger logger = LoggerFactory.getLogger(AbilityService.class);
     private final AbilityRepository abilityRepository;
+    private final PokemonRepository pokemonRepository;
 
     @Autowired
-    public AbilityService(AbilityRepository repository) {
-        super(repository);
-        this.abilityRepository = repository;
+    public AbilityService(AbilityRepository abilityRepository, PokemonRepository pokemonRepository) {
+        super(abilityRepository);
+        this.abilityRepository = abilityRepository;
+        this.pokemonRepository = pokemonRepository;
     }
 
     public List<Ability> getAllAbilities() {
@@ -28,6 +32,11 @@ public class AbilityService extends BaseService<Ability> {
     }
 
     public void deleteAbility(Long id) {
+        for (Pokemon pokemon : pokemonRepository.findAllByAbilityId(id)) {
+            pokemon.setAbilities(null);
+            pokemonRepository.save(pokemon);
+        }
+
         deleteEntity(id);
     }
 

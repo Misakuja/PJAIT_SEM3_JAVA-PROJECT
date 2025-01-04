@@ -5,9 +5,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_data.entity.Move;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.repository.MoveRepository;
+import pjatk.edu.pl.pokemon_data.repository.PokemonRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,10 +18,14 @@ import java.util.Optional;
 public class MoveService extends BaseService<Move> {
     private static final Logger logger = LoggerFactory.getLogger(MoveService.class);
     private final MoveRepository moveRepository;
+    private final PokemonRepository pokemonRepository;
+
+
     @Autowired
-    public MoveService(MoveRepository repository) {
-        super(repository);
-        this.moveRepository = repository;
+    public MoveService(MoveRepository moveRepository, PokemonRepository pokemonRepository) {
+        super(moveRepository);
+        this.moveRepository = moveRepository;
+        this.pokemonRepository = pokemonRepository;
     }
 
     public List<Move> getAllMoves() {
@@ -27,6 +33,11 @@ public class MoveService extends BaseService<Move> {
     }
 
     public void deleteMove(Long id) {
+        for (Pokemon pokemon : pokemonRepository.findAllByMoveId(id)) {
+            pokemon.setMoves(null);
+            pokemonRepository.save(pokemon);
+        }
+
         deleteEntity(id);
     }
 

@@ -80,6 +80,7 @@ public abstract class ViewBaseService {
         logger.info("Successfully deleted entity with ID: {}", id);
     }
 
+    //TODO FIX:
     protected <T> void addEntity(String url, T entity) {
         logger.info("Attempting to add entity with values: {}", entity);
         try {
@@ -95,6 +96,7 @@ public abstract class ViewBaseService {
         logger.info("Successfully added entity using values: {}", entity);
     }
 
+    //TODO FIX:
     protected <T> void updateEntity(String url, T entity, Long id) {
         logger.info("Attempting to update entity of ID: {} using values: {}", id, entity);
         try {

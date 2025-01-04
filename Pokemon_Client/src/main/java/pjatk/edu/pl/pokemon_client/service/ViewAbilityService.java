@@ -23,7 +23,7 @@ public class ViewAbilityService extends ViewBaseService {
     }
 
     public void addAbility(Ability ability) {
-        addEntity("/ability/add", ability);
+        addEntity("/ability", ability);
     }
 
     public void updateAbility(Ability ability, Long id) {

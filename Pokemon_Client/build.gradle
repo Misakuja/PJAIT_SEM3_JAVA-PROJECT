@@ -44,6 +44,9 @@ dependencies {
 
     //Logger
     implementation 'ch.qos.logback:logback-classic:1.4.12'
+
+    //Selenium
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.27.0'
 }
 
 tasks.named('test') {

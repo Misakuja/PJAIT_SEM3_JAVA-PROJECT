@@ -29,6 +29,7 @@ public abstract class BaseService<T> {
         return entityList;
     }
 
+    //TODO: FIX (FK Constraints)
     protected void deleteEntity(Long id) {
         logger.info("Attempting to delete entity with ID: {}", id);
 
@@ -61,7 +62,7 @@ public abstract class BaseService<T> {
         inputToLowercase(entity);
 
         try {
-            Field idField = entity.getClass().getDeclaredField("apiId");
+            Field idField = entity.getClass().getDeclaredField("id");
             idField.setAccessible(true);
             idField.set(entity, id);
         } catch (NoSuchFieldException | IllegalAccessException e) {

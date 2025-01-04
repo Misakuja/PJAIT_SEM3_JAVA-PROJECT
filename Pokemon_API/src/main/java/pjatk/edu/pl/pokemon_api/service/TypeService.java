@@ -4,10 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pjatk.edu.pl.pokemon_data.entity.Move;
+import pjatk.edu.pl.pokemon_data.entity.Pokemon;
 import pjatk.edu.pl.pokemon_data.entity.Type;
 import pjatk.edu.pl.pokemon_data.exception.EntityAlreadyExists;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.repository.MoveRepository;
+import pjatk.edu.pl.pokemon_data.repository.PokemonRepository;
 import pjatk.edu.pl.pokemon_data.repository.TypeRepository;
 
 import java.util.List;
@@ -17,11 +20,15 @@ import java.util.Optional;
 public class TypeService extends BaseService<Type> {
     private static final Logger logger = LoggerFactory.getLogger(TypeService.class);
     private final TypeRepository typeRepository;
+    private final MoveRepository moveRepository;
+    private final PokemonRepository pokemonRepository;
 
     @Autowired
-    public TypeService(TypeRepository repository, MoveRepository moveRepository) {
-        super(repository);
-        this.typeRepository = repository;
+    public TypeService(TypeRepository typeRepository, MoveRepository moveRepository, PokemonRepository pokemonRepository) {
+        super(typeRepository);
+        this.typeRepository = typeRepository;
+        this.moveRepository = moveRepository;
+        this.pokemonRepository = pokemonRepository;
     }
 
     public List<Type> getAllTypes() {
@@ -29,6 +36,16 @@ public class TypeService extends BaseService<Type> {
     }
 
     public void deleteType(Long id) {
+        for (Pokemon pokemon : pokemonRepository.findAllByTypeId(id)) {
+            pokemon.setTypes(null);
+            pokemonRepository.save(pokemon);
+        }
+
+        for (Move move : moveRepository.findAllByTypeId(id)) {
+            move.setType(null);
+            moveRepository.save(move);
+        }
+
         deleteEntity(id);
     }
 

@@ -15,9 +15,4 @@ public class HomeController {
         return "homepage";
     }
 
-    @GetMapping("/error")
-    public String error(Model model) {
-        model.addAttribute("errorText", "Wrong url! We moved you to homepage.");
-        return "homepage";
-    }
 }

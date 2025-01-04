@@ -22,7 +22,7 @@ public class ViewTypeService extends ViewBaseService {
     }
 
     public void addType(Type type) {
-        addEntity("/type/add", type);
+        addEntity("/type/", type);
     }
 
     public void updateType(Type type, Long id) {
