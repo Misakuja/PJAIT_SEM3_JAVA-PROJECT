@@ -36,7 +36,7 @@ public class TypeController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Void> updateType(@RequestBody Type type, @PathVariable Long id) {
         typeService.updateType(type, id);
         return ResponseEntity.ok().build();

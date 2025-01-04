@@ -23,7 +23,7 @@ public class ViewItemService extends ViewBaseService {
     }
 
     public void addItem(Item item) {
-        addEntity("/item/", item);
+        addEntity("/item", item);
     }
 
     public void updateItem(Item item, Long id) {

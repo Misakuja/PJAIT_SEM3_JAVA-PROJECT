@@ -33,7 +33,7 @@ public class ViewMoveService extends ViewBaseService {
     }
 
     public void addMove(Move move) {
-        addEntity("/move/", move);
+        addEntity("/move", move);
     }
 
     public void updateMove(Move move, Long id) {

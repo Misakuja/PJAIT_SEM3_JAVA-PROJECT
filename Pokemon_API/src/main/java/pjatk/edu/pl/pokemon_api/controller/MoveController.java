@@ -42,7 +42,7 @@ public class MoveController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Void> updateMove(@RequestBody Move move, @PathVariable Long id) {
         moveService.updateMove(move, id);
         return ResponseEntity.ok().build();

@@ -36,7 +36,7 @@ public class AbilityController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Void> updateAbility(@RequestBody Ability ability, @PathVariable Long id) {
         abilityService.updateAbility(ability, id);
         return ResponseEntity.ok().build();

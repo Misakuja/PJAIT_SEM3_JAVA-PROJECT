@@ -58,7 +58,7 @@ public class PokemonController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Void> updatePokemon(@RequestBody Pokemon pokemon, @PathVariable Long id) {
         pokemonService.updatePokemon(pokemon, id);
         return ResponseEntity.ok().build();

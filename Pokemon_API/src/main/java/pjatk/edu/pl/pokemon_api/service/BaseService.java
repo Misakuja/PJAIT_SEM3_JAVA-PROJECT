@@ -29,7 +29,6 @@ public abstract class BaseService<T> {
         return entityList;
     }
 
-    //TODO: FIX (FK Constraints)
     protected void deleteEntity(Long id) {
         logger.info("Attempting to delete entity with ID: {}", id);
 

@@ -4,42 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Removed todo">
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/AddFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/AddFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DisplayListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DisplayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/HomepagePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/HomepageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/resources/application-test.properties" afterDir="false" />
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Delete fixed, update (server side) fixed.">
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/AbilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/AbilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/TypeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewAbilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewAbilityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/addForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/java/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +118,7 @@
     "Gradle.DisplayListTest.executor": "Run",
     "Gradle.HomepageTest.executor": "Run",
     "Gradle.Pokemon_Data [:Pokemon_Data:pjatk.edu.pl.pokemon_data.Client.main()].executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -188,7 +176,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PokemonApiApplication">
+  <component name="RunManager" selected="Spring Boot.PokemonClientApplication">
     <configuration name="APITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pjatk.edu.pl.pokemon_integration.APITest" />
       <module name="PokeAPI.Pokemon_Integration.main" />
@@ -274,6 +262,9 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="PokemonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="PokeAPI.Pokemon_API.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pjatk.edu.pl.pokemon_api.PokemonApiApplication" />
@@ -321,6 +312,7 @@
       <item itemvalue="Gradle.AddFormTest" />
       <item itemvalue="Gradle.DisplayListTest" />
       <item itemvalue="Gradle.HomepageTest" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="Spring Boot.PokemonApiApplication" />
       <item itemvalue="Spring Boot.PokemonClientApplication" />
       <item itemvalue="Spring Boot.PokemonDataApplication" />
@@ -330,6 +322,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="Gradle.AddFormTest" />
         <item itemvalue="Gradle.HomepageTest" />
         <item itemvalue="Gradle.DisplayListTest" />
@@ -373,7 +366,7 @@
       <workItem from="1735919369579" duration="3086000" />
       <workItem from="1735936072016" duration="205000" />
       <workItem from="1735977087046" duration="2285000" />
-      <workItem from="1735985166436" duration="4655000" />
+      <workItem from="1735985166436" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -551,11 +544,30 @@
       <option name="project" value="LOCAL" />
       <updated>1735977346449</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Delete fixed, update (server side) fixed.">
+      <option name="closed" value="true" />
+      <created>1735990124231</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1735990124231</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data works, fetchAndSave partially works" />
@@ -574,7 +586,8 @@
     <MESSAGE value="Get All Abilities/Moves/Types of pokemon added" />
     <MESSAGE value="Logic finished." />
     <MESSAGE value="Removed todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed todo" />
+    <MESSAGE value="Delete fixed, update (server side) fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete fixed, update (server side) fixed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

@@ -36,7 +36,7 @@ public class ItemController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Void> updateItem(@RequestBody Item item, @PathVariable Long id) {
         itemService.updateItem(item, id);
         return ResponseEntity.ok().build();

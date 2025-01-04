@@ -40,7 +40,7 @@ public class ViewPokemonService extends ViewBaseService {
     }
 
     public void addPokemon(Pokemon pokemon) {
-        addEntity("/pokemon/", pokemon);
+        addEntity("/pokemon", pokemon);
     }
 
     public void updatePokemon(Pokemon pokemon, Long id) {
