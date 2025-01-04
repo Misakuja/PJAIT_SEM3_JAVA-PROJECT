@@ -3852,3 +3852,200 @@ java.sql.SQLIntegrityConstraintViolationException: (conn=249) Cannot delete or u
 12:46:07.646 [http-nio-8082-exec-3] INFO  p.e.p.p.service.BaseService - Fetching all entities.
 12:46:07.653 [http-nio-8082-exec-3] INFO  p.e.p.p.service.BaseService - Successfully fetched 20 entities.
 12:46:07.696 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+12:52:47.287 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+12:52:47.291 [http-nio-8082-exec-4] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+12:52:47.339 [http-nio-8082-exec-4] INFO  p.e.p.p.service.BaseService - Successfully fetched 2179 entities.
+12:52:47.354 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+12:53:45.379 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Attempting to delete entity with ID: 2
+12:53:45.383 [http-nio-8082-exec-6] INFO  p.e.p.p.service.BaseService - Attempting to delete entity with ID: 2
+12:53:45.399 [http-nio-8082-exec-6] INFO  p.e.p.p.service.BaseService - Successfully deleted entity with ID: 2
+12:53:45.401 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Successfully deleted entity with ID: 2
+12:53:45.404 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+12:53:45.405 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+12:53:45.418 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Successfully fetched 2178 entities.
+12:53:45.421 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+12:58:20.083 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 100
+12:58:20.087 [http-nio-8082-exec-10] INFO  p.e.p.p.service.MoveService - Fetching moves by accuracy: 100
+12:58:20.113 [http-nio-8082-exec-10] INFO  p.e.p.p.service.MoveService - Successfully fetched 455 moves with accuracy: 100
+12:58:20.119 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 100.
+13:00:48.583 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+13:00:48.589 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+13:00:48.592 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:00:48.594 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13:00:48.605 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+13:00:51.172 [main] INFO  p.e.p.p.PokemonClientApplication - Starting PokemonClientApplication using Java 21.0.2 with PID 31380 (C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI\Pokemon_Client\build\classes\java\main started by misakuja in C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI)
+13:00:51.173 [main] INFO  p.e.p.p.PokemonClientApplication - No active profile set, falling back to 1 default profile: "default"
+13:00:51.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:00:51.950 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+13:00:52.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+13:00:52.450 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+13:00:52.451 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:00:52.452 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+13:00:52.510 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:00:52.510 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1300 ms
+13:00:52.621 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:00:52.714 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@118041c7
+13:00:52.715 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:00:52.769 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:00:52.844 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+13:00:52.882 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:00:53.230 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:00:53.289 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13:00:53.304 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13:00:54.320 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:00:54.324 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:00:54.761 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+13:00:55.325 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:00:55.695 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+13:00:55.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+13:00:55.711 [main] INFO  p.e.p.p.PokemonClientApplication - Started PokemonClientApplication in 5.046 seconds (process running for 5.58)
+13:01:24.590 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:01:24.591 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:01:24.592 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+13:01:25.156 [http-nio-8083-exec-4] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 100
+13:01:25.197 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Fetching moves by accuracy: 100
+13:01:25.217 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Successfully fetched 455 moves with accuracy: 100
+13:01:25.256 [http-nio-8083-exec-4] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 100.
+13:03:45.175 [http-nio-8083-exec-1] INFO  p.e.p.p.service.ViewBaseService - Attempting to get entity by field. Using value: 1
+13:03:45.178 [http-nio-8082-exec-2] INFO  p.e.p.p.service.ItemService - Fetching item by API ID: 1
+13:03:45.182 [http-nio-8082-exec-2] WARN  p.e.p.p.service.ItemService - Item with API ID: 1 not found.
+13:03:45.187 [http-nio-8083-exec-1] ERROR p.e.p.p.service.ViewBaseService - Failed to get entity by field. Using value 1. pjatk.edu.pl.pokemon_data.exception.EntityNotFound: Entity not found.
+13:04:49.399 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Attempting to get entity by field. Using value: 3
+13:04:49.404 [http-nio-8082-exec-5] INFO  p.e.p.p.service.ItemService - Fetching item by API ID: 3
+13:04:49.428 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Successfully got entity by field, using value 3.
+13:08:24.792 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+13:08:24.796 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+13:08:24.820 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Successfully fetched 1299 entities.
+13:08:28.575 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+13:09:36.361 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 142
+13:09:36.366 [http-nio-8082-exec-10] INFO  p.e.p.p.service.PokemonService - Fetching Pokémon by base experience: 142
+13:09:36.372 [http-nio-8082-exec-10] INFO  p.e.p.p.service.PokemonService - Successfully fetched 24 Pokémon with base experience: 142
+13:09:36.466 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 142.
+13:17:52.831 [http-nio-8083-exec-8] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 7
+13:17:52.834 [http-nio-8082-exec-1] INFO  p.e.p.p.service.PokemonService - Fetching Pokémon by height: 7
+13:17:52.839 [http-nio-8082-exec-1] INFO  p.e.p.p.service.PokemonService - Successfully fetched 57 Pokémon with height: 7
+13:17:53.032 [http-nio-8083-exec-8] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 7.
+13:20:23.992 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 69
+13:20:23.996 [http-nio-8082-exec-2] INFO  p.e.p.p.service.PokemonService - Fetching Pokémon by weight: 69
+13:20:24.000 [http-nio-8082-exec-2] INFO  p.e.p.p.service.PokemonService - Successfully fetched 2 Pokémon with weight: 69
+13:20:24.009 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 69.
+13:23:30.764 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Attempting to get entity by field. Using value: 5
+13:23:30.769 [http-nio-8082-exec-5] INFO  p.e.p.p.service.ItemService - Fetching item by API ID: 5
+13:23:30.774 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Successfully got entity by field, using value 5.
+13:25:15.524 [http-nio-8083-exec-8] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+13:25:15.527 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+13:25:15.550 [http-nio-8082-exec-7] INFO  p.e.p.p.service.BaseService - Successfully fetched 936 entities.
+13:25:15.553 [http-nio-8083-exec-8] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+13:25:49.259 [http-nio-8083-exec-3] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 40
+13:25:49.263 [http-nio-8082-exec-10] INFO  p.e.p.p.service.MoveService - Fetching moves by power: 40
+13:25:49.283 [http-nio-8082-exec-10] INFO  p.e.p.p.service.MoveService - Successfully fetched 39 moves with power: 40
+13:25:49.285 [http-nio-8083-exec-3] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 40.
+13:28:29.181 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 40
+13:28:29.184 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Fetching moves by power: 40
+13:28:29.203 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Successfully fetched 39 moves with power: 40
+13:28:29.208 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 40.
+13:28:40.182 [http-nio-8083-exec-8] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: null
+13:28:40.188 [http-nio-8082-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'pp': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "null"]
+13:28:40.204 [http-nio-8083-exec-8] ERROR p.e.p.p.service.ViewBaseService - Failed to get entities by field. Using value null. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:29:08.414 [http-nio-8083-exec-3] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: null
+13:29:08.417 [http-nio-8082-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'pp': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "null"]
+13:29:08.420 [http-nio-8083-exec-3] ERROR p.e.p.p.service.ViewBaseService - Failed to get entities by field. Using value null. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:29:17.556 [http-nio-8083-exec-5] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: null
+13:29:17.558 [http-nio-8082-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'pp': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "null"]
+13:29:17.559 [http-nio-8083-exec-5] ERROR p.e.p.p.service.ViewBaseService - Failed to get entities by field. Using value null. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:30:05.657 [http-nio-8082-exec-7] INFO  p.e.p.p.service.MoveService - Fetching moves by PP: 35
+13:30:05.663 [http-nio-8082-exec-7] INFO  p.e.p.p.service.MoveService - Successfully fetched 10 moves with PP: 35
+13:31:13.212 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+13:31:13.214 [http-nio-8082-exec-10] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+13:31:13.234 [http-nio-8082-exec-10] INFO  p.e.p.p.service.BaseService - Successfully fetched 936 entities.
+13:31:13.238 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+13:31:16.557 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 100
+13:31:16.558 [http-nio-8082-exec-9] INFO  p.e.p.p.service.MoveService - Fetching moves by accuracy: 100
+13:31:16.576 [http-nio-8082-exec-9] INFO  p.e.p.p.service.MoveService - Successfully fetched 455 moves with accuracy: 100
+13:31:16.579 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 100.
+13:31:19.418 [http-nio-8083-exec-3] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 40
+13:31:19.419 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Fetching moves by power: 40
+13:31:19.434 [http-nio-8082-exec-1] INFO  p.e.p.p.service.MoveService - Successfully fetched 39 moves with power: 40
+13:31:19.436 [http-nio-8083-exec-3] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 40.
+13:31:21.678 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: null
+13:31:21.679 [http-nio-8082-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'pp': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "null"]
+13:31:21.682 [http-nio-8083-exec-7] ERROR p.e.p.p.service.ViewBaseService - Failed to get entities by field. Using value null. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:38:06.808 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+13:38:06.814 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+13:38:06.819 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:38:06.821 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13:38:06.836 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+13:38:10.436 [main] INFO  p.e.p.p.PokemonClientApplication - Starting PokemonClientApplication using Java 21.0.2 with PID 31700 (C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI\Pokemon_Client\build\classes\java\main started by misakuja in C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI)
+13:38:10.438 [main] INFO  p.e.p.p.PokemonClientApplication - No active profile set, falling back to 1 default profile: "default"
+13:38:11.144 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:38:11.209 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+13:38:11.657 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+13:38:11.667 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+13:38:11.670 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:38:11.670 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+13:38:11.722 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:38:11.722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1236 ms
+13:38:11.826 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:38:11.919 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@26be9a6
+13:38:11.921 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:38:11.976 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:38:12.056 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+13:38:12.099 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13:38:12.424 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13:38:12.489 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13:38:12.505 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13:38:13.517 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13:38:13.521 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:38:13.971 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+13:38:14.557 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:38:14.959 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+13:38:14.972 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+13:38:14.980 [main] INFO  p.e.p.p.PokemonClientApplication - Started PokemonClientApplication in 5.073 seconds (process running for 5.627)
+13:38:31.267 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:38:31.267 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:38:31.269 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:38:31.859 [http-nio-8083-exec-4] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 35
+13:38:31.904 [http-nio-8082-exec-2] INFO  p.e.p.p.service.MoveService - Fetching moves by PP: 35
+13:38:31.910 [http-nio-8082-exec-2] INFO  p.e.p.p.service.MoveService - Successfully fetched 10 moves with PP: 35
+13:38:31.952 [http-nio-8083-exec-4] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 35.
+13:40:43.471 [http-nio-8083-exec-1] INFO  p.e.p.p.service.ViewBaseService - Attempting to update entity of ID: null using values: pjatk.edu.pl.pokemon_data.entity.Item@34760667
+13:40:43.490 [http-nio-8082-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+13:40:43.492 [http-nio-8083-exec-1] WARN  p.e.p.p.service.ViewBaseService - Failed to patch entity. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:40:43.493 [http-nio-8083-exec-1] INFO  p.e.p.p.service.ViewBaseService - Successfully updated entity with ID: null using values: pjatk.edu.pl.pokemon_data.entity.Item@34760667
+13:40:43.497 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+13:40:43.500 [http-nio-8082-exec-6] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+13:40:43.513 [http-nio-8082-exec-6] INFO  p.e.p.p.service.BaseService - Successfully fetched 2178 entities.
+13:40:43.524 [http-nio-8083-exec-2] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+13:41:08.146 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Attempting to update entity of ID: null using values: pjatk.edu.pl.pokemon_data.entity.Item@2d7a8611
+13:41:08.149 [http-nio-8082-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+13:41:08.151 [http-nio-8083-exec-9] WARN  p.e.p.p.service.ViewBaseService - Failed to patch entity. pjatk.edu.pl.pokemon_data.exception.InvalidInput: Invalid field input.
+13:41:08.151 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Successfully updated entity with ID: null using values: pjatk.edu.pl.pokemon_data.entity.Item@2d7a8611
+13:41:08.154 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities
+13:41:08.156 [http-nio-8082-exec-8] INFO  p.e.p.p.service.BaseService - Fetching all entities.
+13:41:08.169 [http-nio-8082-exec-8] INFO  p.e.p.p.service.BaseService - Successfully fetched 2178 entities.
+13:41:08.173 [http-nio-8083-exec-10] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities
+13:41:44.852 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 69
+13:41:44.857 [http-nio-8082-exec-9] INFO  p.e.p.p.service.PokemonService - Fetching Pokémon by weight: 69
+13:41:44.863 [http-nio-8082-exec-9] INFO  p.e.p.p.service.PokemonService - Successfully fetched 2 Pokémon with weight: 69
+13:41:44.880 [http-nio-8083-exec-6] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 69.
+13:42:27.299 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Attempting to get all entities by field. Using value: 35
+13:42:27.301 [http-nio-8082-exec-3] INFO  p.e.p.p.service.MoveService - Fetching moves by PP: 35
+13:42:27.308 [http-nio-8082-exec-3] INFO  p.e.p.p.service.MoveService - Successfully fetched 10 moves with PP: 35
+13:42:27.311 [http-nio-8083-exec-9] INFO  p.e.p.p.service.ViewBaseService - Successfully got all entities by field, using value 35.
+13:42:42.914 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Attempting to get entity by field. Using value: 5
+13:42:42.916 [http-nio-8082-exec-2] INFO  p.e.p.p.service.ItemService - Fetching item by API ID: 5
+13:42:42.936 [http-nio-8083-exec-7] INFO  p.e.p.p.service.ViewBaseService - Successfully got entity by field, using value 5.

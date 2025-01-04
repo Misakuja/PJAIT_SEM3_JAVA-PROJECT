@@ -180,7 +180,7 @@ public class ViewMoveController {
 
     @PostMapping("/find/pp")
     public String viewByPp(@ModelAttribute Move move, Model model) {
-        Integer ppInput = move.getAccuracy();
+        Integer ppInput = move.getPp();
         model.addAttribute("entityType", "Move");
         model.addAttribute("entities", viewMoveService.getMoveByPp(ppInput));
         return "displayList";

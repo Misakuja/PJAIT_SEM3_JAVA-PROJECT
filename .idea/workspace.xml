@@ -4,28 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Delete fixed, update (server side) fixed.">
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Logic fixed">
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DeleteFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/DeleteFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByAccuracyFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByAccuracyFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByApiIdFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByApiIdFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByBaseExperienceFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByBaseExperienceFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByHeightFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByHeightFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByIdFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByIdFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPowerFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPowerFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPpFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByPpFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByWeightFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/FindByWeightFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/UpdateFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/pjatk/edu/pl/pokemon_client/selenium/UpdateFormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/AbilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/AbilityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/MoveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/PokemonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/controller/TypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/classes/java/main/pjatk/edu/pl/pokemon_data/repository/PokemonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/controller/ViewMoveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByAccuracyForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPowerForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/findByPpForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
@@ -54,6 +64,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/Pokemon_Client">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -115,9 +128,21 @@
     "Gradle.Build Pokemon_Client.executor": "Run",
     "Gradle.Build Pokemon_Data.executor": "Run",
     "Gradle.Build Pokemon_Integration.executor": "Run",
+    "Gradle.DeleteFormTest.deleteFormTest.executor": "Run",
     "Gradle.DisplayListTest.executor": "Run",
+    "Gradle.FindByAccuracyFormTest.executor": "Run",
+    "Gradle.FindByAccuracyFormTest.findByAccuracyFormTest.executor": "Run",
+    "Gradle.FindByApiIdFormTest.findByApiIdFormTest.executor": "Run",
+    "Gradle.FindByBaseExperienceFormTest.findByBaseExperienceFormTest.executor": "Run",
+    "Gradle.FindByHeightFormTest.findByHeightFormTest.executor": "Run",
+    "Gradle.FindByIdFormTest.executor": "Run",
+    "Gradle.FindByPowerFormTest.findByPowerFormTest.executor": "Run",
+    "Gradle.FindByPpFormTest.executor": "Run",
+    "Gradle.FindByPpFormTest.findByPowerFormTest.executor": "Run",
+    "Gradle.FindByWeightFormTest.executor": "Run",
     "Gradle.HomepageTest.executor": "Run",
     "Gradle.Pokemon_Data [:Pokemon_Data:pjatk.edu.pl.pokemon_data.Client.main()].executor": "Run",
+    "Gradle.UpdateFormTest.updateFormTest.executor": "Run",
     "HTTP Request.generated-requests | #2.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -164,6 +189,7 @@
       <recent name="C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI\Pokemon_Client\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pjatk.edu.pl.pokemon_client.selenium" />
       <recent name="pjatk.edu.pl.pokemon_data.dto" />
     </key>
   </component>
@@ -176,21 +202,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PokemonClientApplication">
-    <configuration name="APITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pjatk.edu.pl.pokemon_integration.APITest" />
-      <module name="PokeAPI.Pokemon_Integration.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pjatk.edu.pl.pokemon_integration.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.FindByHeightFormTest">
+    <configuration name="FindByHeightFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -203,7 +216,7 @@
           <list>
             <option value=":Pokemon_Client:test" />
             <option value="--tests" />
-            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.AddFormTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.FindByHeightFormTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,7 +227,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DisplayListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FindByIdFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -227,7 +240,55 @@
           <list>
             <option value=":Pokemon_Client:test" />
             <option value="--tests" />
-            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.DisplayListTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.FindByIdFormTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FindByPowerFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Pokemon_Client:test" />
+            <option value="--tests" />
+            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.FindByPowerFormTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FindByPpFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Pokemon_Client:test" />
+            <option value="--tests" />
+            <option value="&quot;pjatk.edu.pl.pokemon_client.selenium.FindByPpFormTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -260,9 +321,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="PokemonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -308,11 +366,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.APITest" />
-      <item itemvalue="Gradle.AddFormTest" />
-      <item itemvalue="Gradle.DisplayListTest" />
+      <item itemvalue="Gradle.FindByHeightFormTest" />
+      <item itemvalue="Gradle.FindByIdFormTest" />
+      <item itemvalue="Gradle.FindByPowerFormTest" />
+      <item itemvalue="Gradle.FindByPpFormTest" />
       <item itemvalue="Gradle.HomepageTest" />
-      <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="Spring Boot.PokemonApiApplication" />
       <item itemvalue="Spring Boot.PokemonClientApplication" />
       <item itemvalue="Spring Boot.PokemonDataApplication" />
@@ -322,11 +380,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="Gradle.AddFormTest" />
+        <item itemvalue="Gradle.FindByHeightFormTest" />
+        <item itemvalue="Gradle.FindByIdFormTest" />
+        <item itemvalue="Gradle.FindByPowerFormTest" />
+        <item itemvalue="Gradle.FindByPpFormTest" />
         <item itemvalue="Gradle.HomepageTest" />
-        <item itemvalue="Gradle.DisplayListTest" />
-        <item itemvalue="Application.APITest" />
       </list>
     </recent_temporary>
   </component>
@@ -366,7 +424,7 @@
       <workItem from="1735919369579" duration="3086000" />
       <workItem from="1735936072016" duration="205000" />
       <workItem from="1735977087046" duration="2285000" />
-      <workItem from="1735985166436" duration="6020000" />
+      <workItem from="1735985166436" duration="9253000" />
     </task>
     <task id="LOCAL-00001" summary="Data works, fetchAndSave partially works">
       <option name="closed" value="true" />
@@ -552,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735990124231</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Logic fixed">
+      <option name="closed" value="true" />
+      <created>1735991247519</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1735991247519</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +653,8 @@
     <MESSAGE value="Logic finished." />
     <MESSAGE value="Removed todo" />
     <MESSAGE value="Delete fixed, update (server side) fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete fixed, update (server side) fixed." />
+    <MESSAGE value="Logic fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logic fixed" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
