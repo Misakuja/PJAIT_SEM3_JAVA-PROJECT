@@ -1,7 +1,6 @@
 package pjatk.edu.pl.pokemon_client.service;
 
 import org.slf4j.Logger;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -16,9 +15,9 @@ public abstract class ViewBaseService {
     private final RestClient restClient;
     private final Logger logger;
 
-    public ViewBaseService(RestClient restClient, @Qualifier("viewBaseServiceLogger") Logger logger) {
+    public ViewBaseService(RestClient restClient, Logger viewBaseServiceLogger) {
         this.restClient = restClient;
-        this.logger = logger;
+        this.logger = viewBaseServiceLogger;
     }
 
     protected <T> List<T> getAllEntities(String url) {

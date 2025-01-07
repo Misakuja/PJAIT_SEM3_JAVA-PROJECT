@@ -1,7 +1,6 @@
 package pjatk.edu.pl.pokemon_api.service;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_data.entity.Ability;
@@ -17,14 +16,14 @@ import java.util.Optional;
 
 @Service
 public class PokemonService extends BaseService<Pokemon> {
-    private static final Logger logger = LoggerFactory.getLogger(PokemonService.class);
-
+    private final Logger logger;
     private final PokemonRepository pokemonRepository;
 
     @Autowired
-    public PokemonService(PokemonRepository repository) {
-        super(repository);
+    public PokemonService(PokemonRepository repository, Logger pokemonServiceLogger) {
+        super(repository, pokemonServiceLogger);
         this.pokemonRepository = repository;
+        this.logger = pokemonServiceLogger;
     }
 
     public List<Pokemon> getAllPokemon() {

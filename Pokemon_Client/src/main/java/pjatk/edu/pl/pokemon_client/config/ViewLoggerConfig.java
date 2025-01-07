@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import pjatk.edu.pl.pokemon_client.service.*;
 
 @Configuration
-public class LoggerConfig {
+public class ViewLoggerConfig {
 
     @Bean
     @Qualifier("viewBaseServiceLogger")

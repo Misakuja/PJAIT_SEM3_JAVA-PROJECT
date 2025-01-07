@@ -1,7 +1,6 @@
 package pjatk.edu.pl.pokemon_api.service;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import pjatk.edu.pl.pokemon_data.exception.EntityNotFound;
 import pjatk.edu.pl.pokemon_data.exception.InvalidInput;
@@ -11,11 +10,12 @@ import java.util.List;
 import java.util.Optional;
 
 public abstract class BaseService<T> {
-    private static final Logger logger = LoggerFactory.getLogger(BaseService.class);
+    private final Logger logger;
     protected final JpaRepository<T, Long> repository;
 
-    protected BaseService(JpaRepository<T, Long> repository) {
+    protected BaseService(JpaRepository<T, Long> repository, Logger baseServiceLogger) {
         this.repository = repository;
+        this.logger = baseServiceLogger;
     }
 
     protected List<T> getAllEntities() {
@@ -57,7 +57,6 @@ public abstract class BaseService<T> {
             throw new EntityNotFound();
         }
         validateEntityInput(entity);
-
         inputToLowercase(entity);
 
         try {

@@ -4,37 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="UI Tests added">
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/config/LoggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" afterDir="false" />
+    <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Unit Tests added for Server module">
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/AbilityServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/BaseServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/ItemServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/MoveServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/PokemonServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/TypeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/config/ViewLoggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewAbilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewAbilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/config/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/config/LoggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewMoveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewPokemonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/resources/templates/displayList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/test/java/ViewBaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/test/java/ViewBaseServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/libs/Pokemon_Data-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Data/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Data/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
@@ -125,7 +118,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest.executor": "Run",
+    "Gradle.AbilityServiceTest.executor": "Coverage",
     "Gradle.AddFormTest.executor": "Run",
+    "Gradle.BaseServiceTest.GetAllEntitiesThrowsEntityNotFoundTest.executor": "Coverage",
+    "Gradle.BaseServiceTest.GetAllEntitiesWorksCorrectlyTest.executor": "Run",
+    "Gradle.BaseServiceTest.addEntityThrowsInvalidInputTest.executor": "Run",
+    "Gradle.BaseServiceTest.addEntityWorksCorrectlyTest.executor": "Run",
+    "Gradle.BaseServiceTest.deleteEntityThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.BaseServiceTest.deleteEntityWorksCorrectlyTest.executor": "Run",
+    "Gradle.BaseServiceTest.executor": "Coverage",
+    "Gradle.BaseServiceTest.getEntityByIdThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.BaseServiceTest.getEntityByIdWorkCorrectlyTest.executor": "Run",
+    "Gradle.BaseServiceTest.updateEntityWorksCorrectlyTest.executor": "Run",
+    "Gradle.BaseServiceTest.updateThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.BaseServiceTest.updateThrowsInvalidInputTest.executor": "Run",
+    "Gradle.BaseServiceTest.updateThrowsNoSuchFieldTest.executor": "Run",
     "Gradle.Build PokeAPI.executor": "Run",
     "Gradle.Build Pokemon_API.executor": "Run",
     "Gradle.Build Pokemon_Client.executor": "Run",
@@ -146,7 +155,24 @@
     "Gradle.FindByPpFormTest.findByPowerFormTest.executor": "Run",
     "Gradle.FindByWeightFormTest.executor": "Coverage",
     "Gradle.HomepageTest.executor": "Coverage",
+    "Gradle.ItemServiceTest.executor": "Coverage",
+    "Gradle.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest.executor": "Coverage",
+    "Gradle.MoveServiceTest.executor": "Coverage",
+    "Gradle.PokemonServiceTest.addPokemonThrowsEntityAlreadyExistsTest.executor": "Run",
+    "Gradle.PokemonServiceTest.executor": "Coverage",
+    "Gradle.PokemonServiceTest.getAllTypesByPokemonIdSuccessTest.executor": "Coverage",
+    "Gradle.PokemonServiceTest.getPokemonByApiIdThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.PokemonServiceTest.getPokemonByBaseExperienceThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.PokemonServiceTest.getPokemonByBaseExperienceWorksCorrectlyTest.executor": "Run",
     "Gradle.Pokemon_Data [:Pokemon_Data:pjatk.edu.pl.pokemon_data.Client.main()].executor": "Run",
+    "Gradle.TypeServiceTest.deleteTypeCallsFindAllByTypeIdTest.executor": "Coverage",
+    "Gradle.TypeServiceTest.executor": "Coverage",
+    "Gradle.TypeServiceTest.getTypeByApiIdThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.TypeServiceTest.getTypeByApiIdWorksCorrectlyTest.executor": "Run",
+    "Gradle.TypeServiceTest.getTypeByNameThrowsEntityNotFoundTest.executor": "Run",
+    "Gradle.TypeServiceTest.testAddTypeThrowsEntityAlreadyExists.executor": "Run",
+    "Gradle.TypeServiceTest.testDeleteTypeCallsFindAllByTypeId.executor": "Run",
+    "Gradle.TypeServiceTest.testUpdateTypeThrowsEntityAlreadyExists.executor": "Run",
     "Gradle.UpdateFormTest.executor": "Coverage",
     "Gradle.UpdateFormTest.updateFormTest.executor": "Run",
     "Gradle.ViewBaseServiceTest.addEntityThrowsExceptionTest.executor": "Run",
@@ -168,6 +194,9 @@
     "Gradle.ViewBaseServiceTest.updateEntityThrowsExceptionTest.executor": "Run",
     "Gradle.ViewBaseServiceTest.updateEntityWorksCorrectlyTest.executor": "Run",
     "HTTP Request.generated-requests | #2.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -213,6 +242,8 @@
       <recent name="C:\Users\misakuja\Desktop\JAVA PROJECT\PokeAPI\Pokemon_Client\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pjatk.edu.pl.pokemon_api" />
+      <recent name="pjatk.edu.pl.pokemon_api.config" />
       <recent name="pjatk.edu.pl.pokemon_client.selenium" />
       <recent name="pjatk.edu.pl.pokemon_data.dto" />
     </key>
@@ -226,8 +257,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ViewBaseServiceTest">
-    <configuration name="ViewBaseServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MoveServiceTest">
+    <configuration name="AbilityServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -238,9 +269,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":Pokemon_Client:test" />
+            <option value=":Pokemon_API:test" />
             <option value="--tests" />
-            <option value="&quot;ViewBaseServiceTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_api.AbilityServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -251,7 +282,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsEntityNotFoundExceptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -262,9 +293,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":Pokemon_Client:test" />
+            <option value=":Pokemon_API:test" />
             <option value="--tests" />
-            <option value="&quot;ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsEntityNotFoundExceptionTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_api.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -275,7 +306,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsExceptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ItemServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -286,9 +317,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":Pokemon_Client:test" />
+            <option value=":Pokemon_API:test" />
             <option value="--tests" />
-            <option value="&quot;ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsExceptionTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_api.ItemServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -299,7 +330,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ViewBaseServiceTest.getEntityListByFieldThrowsEntityNotFoundExceptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MoveServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -310,9 +341,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":Pokemon_Client:test" />
+            <option value=":Pokemon_API:test" />
             <option value="--tests" />
-            <option value="&quot;ViewBaseServiceTest.getEntityListByFieldThrowsEntityNotFoundExceptionTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_api.MoveServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -323,7 +354,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ViewBaseServiceTest.getEntityListByFieldThrowsExceptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
@@ -334,9 +365,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":Pokemon_Client:test" />
+            <option value=":Pokemon_API:test" />
             <option value="--tests" />
-            <option value="&quot;ViewBaseServiceTest.getEntityListByFieldThrowsExceptionTest&quot;" />
+            <option value="&quot;pjatk.edu.pl.pokemon_api.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -390,11 +421,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ViewBaseServiceTest" />
-      <item itemvalue="Gradle.ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsEntityNotFoundExceptionTest" />
-      <item itemvalue="Gradle.ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsExceptionTest" />
-      <item itemvalue="Gradle.ViewBaseServiceTest.getEntityListByFieldThrowsEntityNotFoundExceptionTest" />
-      <item itemvalue="Gradle.ViewBaseServiceTest.getEntityListByFieldThrowsExceptionTest" />
+      <item itemvalue="Gradle.AbilityServiceTest" />
+      <item itemvalue="Gradle.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest" />
+      <item itemvalue="Gradle.ItemServiceTest" />
+      <item itemvalue="Gradle.MoveServiceTest" />
+      <item itemvalue="Gradle.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" />
       <item itemvalue="Spring Boot.PokemonApiApplication" />
       <item itemvalue="Spring Boot.PokemonClientApplication" />
       <item itemvalue="Spring Boot.PokemonDataApplication" />
@@ -404,11 +435,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ViewBaseServiceTest" />
-        <item itemvalue="Gradle.ViewBaseServiceTest.getEntityListByFieldThrowsExceptionTest" />
-        <item itemvalue="Gradle.ViewBaseServiceTest.getEntityListByFieldThrowsEntityNotFoundExceptionTest" />
-        <item itemvalue="Gradle.ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsEntityNotFoundExceptionTest" />
-        <item itemvalue="Gradle.ViewBaseServiceTest.getAllEntitiesOfRelationsThrowsExceptionTest" />
+        <item itemvalue="Gradle.MoveServiceTest" />
+        <item itemvalue="Gradle.AbilityServiceTest" />
+        <item itemvalue="Gradle.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest" />
+        <item itemvalue="Gradle.ItemServiceTest" />
+        <item itemvalue="Gradle.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -658,7 +689,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735998240229</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Unit Tests added for Client module">
+      <option name="closed" value="true" />
+      <created>1736283310851</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736283310852</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,21 +734,33 @@
     <MESSAGE value="Delete fixed, update (server side) fixed." />
     <MESSAGE value="Logic fixed" />
     <MESSAGE value="UI Tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI Tests added" />
+    <MESSAGE value="Unit Tests added for Client module" />
+    <MESSAGE value="Unit Tests added for Server module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit Tests added for Server module" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PokeAPI$BaseServiceTest.ic" NAME="BaseServiceTest Coverage Results" MODIFIED="1736288299955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$FindByPowerFormTest.ic" NAME="FindByPowerFormTest Coverage Results" MODIFIED="1735994531888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$FindByIdFormTest.ic" NAME="FindByIdFormTest Coverage Results" MODIFIED="1735994534066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest_deleteEntityWorksCorrectlyTest.ic" NAME="ViewBaseServiceTest.deleteEntityWorksCorrectlyTest Coverage Results" MODIFIED="1736280727206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$FindByWeightFormTest.ic" NAME="FindByWeightFormTest Coverage Results" MODIFIED="1735994490400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest_getAllEntitiesThrowsEntityNotFoundExceptionTest.ic" NAME="ViewBaseServiceTest.getAllEntitiesThrowsEntityNotFoundExceptionTest Coverage Results" MODIFIED="1736273692024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$FindByHeightFormTest.ic" NAME="FindByHeightFormTest Coverage Results" MODIFIED="1735994543361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$PokemonServiceTest.ic" NAME="PokemonServiceTest Coverage Results" MODIFIED="1736291315181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$PokemonServiceTest_getAllTypesByPokemonIdSuccessTest.ic" NAME="PokemonServiceTest.getAllTypesByPokemonIdSuccessTest Coverage Results" MODIFIED="1736291390479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$UpdateFormTest.ic" NAME="UpdateFormTest Coverage Results" MODIFIED="1735994452726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$FindByPpFormTest.ic" NAME="FindByPpFormTest Coverage Results" MODIFIED="1735994530034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest_getAllEntitiesThrowsExceptionTest.ic" NAME="ViewBaseServiceTest.getAllEntitiesThrowsExceptionTest Coverage Results" MODIFIED="1736273678924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest.ic" NAME="ViewBaseServiceTest Coverage Results" MODIFIED="1736283080180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$TypeServiceTest.ic" NAME="TypeServiceTest Coverage Results" MODIFIED="1736289724091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$BaseServiceTest_GetAllEntitiesThrowsEntityNotFoundTest.ic" NAME="BaseServiceTest.GetAllEntitiesThrowsEntityNotFoundTest Coverage Results" MODIFIED="1736285605478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$ItemServiceTest.ic" NAME="ItemServiceTest Coverage Results" MODIFIED="1736291716886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest.ic" NAME="ViewBaseServiceTest Coverage Results" MODIFIED="1736283134827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$MoveServiceTest_deleteMoveCallsFindAllByMoveIdTest.ic" NAME="MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest Coverage Results" MODIFIED="1736291601857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$HomepageTest.ic" NAME="HomepageTest Coverage Results" MODIFIED="1735994498144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$MoveServiceTest.ic" NAME="MoveServiceTest Coverage Results" MODIFIED="1736292080387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/PokeAPI$ViewBaseServiceTest_getAllEntitiesWorksCorrectlyTest.ic" NAME="ViewBaseServiceTest.getAllEntitiesWorksCorrectlyTest Coverage Results" MODIFIED="1736273702754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$AbilityServiceTest.ic" NAME="AbilityServiceTest Coverage Results" MODIFIED="1736291798844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/PokeAPI$TypeServiceTest_deleteTypeCallsFindAllByTypeIdTest.ic" NAME="TypeServiceTest.deleteTypeCallsFindAllByTypeIdTest Coverage Results" MODIFIED="1736289798389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

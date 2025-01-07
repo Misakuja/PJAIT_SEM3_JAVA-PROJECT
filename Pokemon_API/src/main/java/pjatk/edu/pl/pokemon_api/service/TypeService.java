@@ -1,7 +1,6 @@
 package pjatk.edu.pl.pokemon_api.service;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pjatk.edu.pl.pokemon_data.entity.Move;
@@ -18,17 +17,18 @@ import java.util.Optional;
 
 @Service
 public class TypeService extends BaseService<Type> {
-    private static final Logger logger = LoggerFactory.getLogger(TypeService.class);
+    private final Logger logger;
     private final TypeRepository typeRepository;
     private final MoveRepository moveRepository;
     private final PokemonRepository pokemonRepository;
 
     @Autowired
-    public TypeService(TypeRepository typeRepository, MoveRepository moveRepository, PokemonRepository pokemonRepository) {
-        super(typeRepository);
+    public TypeService(TypeRepository typeRepository, MoveRepository moveRepository, PokemonRepository pokemonRepository, Logger typeServiceLogger) {
+        super(typeRepository, typeServiceLogger);
         this.typeRepository = typeRepository;
         this.moveRepository = moveRepository;
         this.pokemonRepository = pokemonRepository;
+        this.logger = typeServiceLogger;
     }
 
     public List<Type> getAllTypes() {
