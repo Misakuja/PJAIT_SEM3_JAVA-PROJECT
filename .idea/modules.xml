@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_API/PokeAPI.Pokemon_API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_API/PokeAPI.Pokemon_API.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PokeAPI.Pokemon_Client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PokeAPI.Pokemon_Client.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_Data/PokeAPI.Pokemon_Data.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_Data/PokeAPI.Pokemon_Data.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_Integration/PokeAPI.Pokemon_Integration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_Integration/PokeAPI.Pokemon_Integration.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_API.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_API.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_API.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pokemon_API.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Pokemon_API.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pokemon_Client/test/test.iml" filepath="$PROJECT_DIR$/Pokemon_Client/test/test.iml" />
     </modules>
   </component>
 </project>

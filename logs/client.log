@@ -17050,3 +17050,296 @@ Caused by: java.sql.SQLSyntaxErrorException: (conn=623) Table 'test_database.typ
 14:42:56.297 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 14:42:56.300 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 14:42:56.308 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:45:13.344 [main] INFO  p.e.p.p.PokemonIntegrationApplication - Starting PokemonIntegrationApplication using Java 21.0.5 with PID 43511 (/Users/misakuja/Downloads/PokeAPI/PJAIT_SEM3_JAVA-PROJECT/Pokemon_Integration/build/classes/java/main started by misakuja in /Users/misakuja/Downloads/PokeAPI/PJAIT_SEM3_JAVA-PROJECT)
+20:45:13.345 [main] INFO  p.e.p.p.PokemonIntegrationApplication - No active profile set, falling back to 1 default profile: "default"
+20:45:13.608 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:45:13.635 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+20:45:13.805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+20:45:13.809 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+20:45:13.810 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:45:13.810 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+20:45:13.828 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:45:13.828 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 461 ms
+20:45:13.880 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:45:13.907 [main] WARN  o.m.jdbc.message.server.ErrorPacket - Error: 1044-42000: Access denied for user 'admin'@'%' to database 'test_database'
+20:45:14.956 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:45:14.989 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+20:45:15.007 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+20:45:15.110 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:45:15.122 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:45:15.126 [main] WARN  o.m.jdbc.message.server.ErrorPacket - Error: 1044-42000: Access denied for user 'admin'@'%' to database 'test_database'
+20:45:16.129 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1044, SQLState: 42000
+20:45:16.129 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - (conn=29) Access denied for user 'admin'@'%' to database 'test_database'
+20:45:16.130 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [(conn=29) Access denied for user 'admin'@'%' to database 'test_database'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at pjatk.edu.pl.pokemon_integration.PokemonIntegrationApplication.main(PokemonIntegrationApplication.java:21)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=29) Access denied for user 'admin'@'%' to database 'test_database'
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.client.impl.StandardClient.authenticationHandler(StandardClient.java:306)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:226)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:68)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:26)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 35 common frames omitted
+20:45:16.146 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+20:45:16.152 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+20:45:16.530 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:45:16.531 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:45:16.646 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+20:45:16.906 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:45:17.028 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+20:45:17.034 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+20:45:17.038 [main] INFO  p.e.p.p.PokemonIntegrationApplication - Started PokemonIntegrationApplication in 3.97 seconds (process running for 4.227)
+20:45:17.039 [main] INFO  p.e.p.p.service.DatabaseService - Fetching and saving Types from URL: https://pokeapi.co/api/v2/type/
+20:45:17.039 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/type/
+20:45:17.198 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+20:45:17.202 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+20:45:17.205 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:47:00.597 [main] INFO  p.e.p.p.PokemonIntegrationApplication - Starting PokemonIntegrationApplication using Java 21.0.5 with PID 43575 (/Users/misakuja/Downloads/PokeAPI/PJAIT_SEM3_JAVA-PROJECT/Pokemon_Integration/build/classes/java/main started by misakuja in /Users/misakuja/Downloads/PokeAPI/PJAIT_SEM3_JAVA-PROJECT)
+20:47:00.598 [main] INFO  p.e.p.p.PokemonIntegrationApplication - No active profile set, falling back to 1 default profile: "default"
+20:47:00.831 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:47:00.859 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+20:47:01.029 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+20:47:01.033 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+20:47:01.034 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:47:01.034 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+20:47:01.052 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:47:01.052 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 440 ms
+20:47:01.104 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:47:01.136 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@79957f11
+20:47:01.136 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:47:01.155 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:47:01.179 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+20:47:01.196 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+20:47:01.308 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:47:01.332 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+20:47:01.337 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+20:47:01.671 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:47:01.672 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:47:01.780 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+20:47:02.031 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:47:02.151 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+20:47:02.157 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+20:47:02.160 [main] INFO  p.e.p.p.PokemonIntegrationApplication - Started PokemonIntegrationApplication in 1.716 seconds (process running for 1.972)
+20:47:02.162 [main] INFO  p.e.p.p.service.DatabaseService - Fetching and saving Types from URL: https://pokeapi.co/api/v2/type/
+20:47:02.162 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/type/
+20:47:02.392 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 1
+20:47:02.461 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: normal
+20:47:02.970 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 2
+20:47:02.986 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: fighting
+20:47:03.157 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 3
+20:47:03.177 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: flying
+20:47:03.206 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 4
+20:47:03.215 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: poison
+20:47:03.244 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 5
+20:47:03.251 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: ground
+20:47:03.421 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 6
+20:47:03.433 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: rock
+20:47:03.456 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 7
+20:47:03.464 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: bug
+20:47:03.488 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 8
+20:47:03.500 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: ghost
+20:47:03.661 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 9
+20:47:03.671 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: steel
+20:47:03.838 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 10
+20:47:03.850 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: fire
+20:47:04.022 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 11
+20:47:04.032 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: water
+20:47:04.060 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 12
+20:47:04.067 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: grass
+20:47:04.093 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 13
+20:47:04.100 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: electric
+20:47:04.125 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 14
+20:47:04.134 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: psychic
+20:47:04.157 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 15
+20:47:04.166 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: ice
+20:47:04.193 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 16
+20:47:04.200 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: dragon
+20:47:04.229 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 17
+20:47:04.237 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: dark
+20:47:04.262 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 18
+20:47:04.270 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: fairy
+20:47:04.430 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 19
+20:47:04.446 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: stellar
+20:47:04.606 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 10001
+20:47:04.616 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: unknown
+20:47:04.616 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/type/?offset=20&limit=1
+20:47:05.319 [main] INFO  p.e.p.p.service.DatabaseService - Saving Type with API ID: 10002
+20:47:05.326 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Type: shadow
+20:47:05.328 [main] INFO  p.e.p.p.service.DatabaseService - Fetching and saving Moves from URL: https://pokeapi.co/api/v2/move/
+20:47:05.328 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/move/
+20:47:05.677 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 1
+20:47:05.706 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: pound
+20:47:05.876 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 2
+20:47:05.896 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: karate-chop
+20:47:06.066 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 3
+20:47:06.094 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: double-slap
+20:47:06.270 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 4
+20:47:06.293 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: comet-punch
+20:47:06.460 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 5
+20:47:06.478 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: mega-punch
+20:47:06.963 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 6
+20:47:06.980 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: pay-day
+20:47:07.146 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 7
+20:47:07.170 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: fire-punch
+20:47:07.346 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 8
+20:47:07.355 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: ice-punch
+20:47:07.530 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 9
+20:47:07.536 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: thunder-punch
+20:47:07.704 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 10
+20:47:07.722 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: scratch
+20:47:07.891 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 11
+20:47:07.907 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: vice-grip
+20:47:08.075 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 12
+20:47:08.100 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: guillotine
+20:47:08.294 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 13
+20:47:08.319 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: razor-wind
+20:47:08.345 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 14
+20:47:08.353 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: swords-dance
+20:47:08.377 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 15
+20:47:08.385 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: cut
+20:47:08.907 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 16
+20:47:08.931 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: gust
+20:47:09.097 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 17
+20:47:09.120 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: wing-attack
+20:47:09.284 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 18
+20:47:09.304 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: whirlwind
+20:47:09.471 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 19
+20:47:09.486 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: fly
+20:47:09.511 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 20
+20:47:09.522 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: bind
+20:47:09.522 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/move/?offset=20&limit=20
+20:47:10.313 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 21
+20:47:10.332 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: slam
+20:47:10.359 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 22
+20:47:10.376 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: vine-whip
+20:47:10.410 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 23
+20:47:10.427 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: stomp
+20:47:10.604 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 24
+20:47:10.619 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: double-kick
+20:47:10.794 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 25
+20:47:10.813 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: mega-kick
+20:47:10.990 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 26
+20:47:11.009 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: jump-kick
+20:47:11.183 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 27
+20:47:11.205 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: rolling-kick
+20:47:11.370 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 28
+20:47:11.389 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: sand-attack
+20:47:11.419 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 29
+20:47:11.438 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: headbutt
+20:47:11.614 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 30
+20:47:11.625 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: horn-attack
+20:47:11.801 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 31
+20:47:11.820 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: fury-attack
+20:47:11.844 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 32
+20:47:11.855 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: horn-drill
+20:47:11.885 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 33
+20:47:11.895 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: tackle
+20:47:11.920 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 34
+20:47:11.931 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: body-slam
+20:47:12.391 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 35
+20:47:12.410 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: wrap
+20:47:12.443 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 36
+20:47:12.468 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: take-down
+20:47:13.004 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 37
+20:47:13.018 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: thrash
+20:47:13.048 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 38
+20:47:13.061 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: double-edge
+20:47:13.235 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 39
+20:47:13.247 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: tail-whip
+20:47:13.414 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 40
+20:47:13.434 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: poison-sting
+20:47:13.434 [main] INFO  p.e.p.p.service.DatabaseService - Fetching data from URL: https://pokeapi.co/api/v2/move/?offset=40&limit=20
+20:47:14.098 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 41
+20:47:14.118 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: twineedle
+20:47:14.279 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 42
+20:47:14.296 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: pin-missile
+20:47:14.463 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 43
+20:47:14.477 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: leer
+20:47:14.647 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 44
+20:47:14.666 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: bite
+20:47:14.690 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 45
+20:47:14.701 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: growl
+20:47:14.724 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 46
+20:47:14.736 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: roar
+20:47:14.904 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 47
+20:47:14.918 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: sing
+20:47:15.083 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 48
+20:47:15.094 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: supersonic
+20:47:15.261 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 49
+20:47:15.274 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: sonic-boom
+20:47:15.769 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 50
+20:47:15.784 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: disable
+20:47:16.279 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 51
+20:47:16.301 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: acid
+20:47:16.472 [main] INFO  p.e.p.p.service.DatabaseService - Saving Move with API ID: 52
+20:47:16.495 [main] INFO  p.e.p.p.service.DatabaseService - Successfully saved Move: ember
+20:47:16.571 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+20:47:16.578 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+20:47:16.585 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:47:16.587 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:47:16.603 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

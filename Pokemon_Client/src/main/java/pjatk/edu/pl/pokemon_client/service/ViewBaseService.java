@@ -16,7 +16,6 @@ public abstract class ViewBaseService {
     private final RestClient restClient;
     private static final Logger logger = LoggerFactory.getLogger(ViewBaseService.class);
 
-
     protected ViewBaseService(RestClient restclient) {
         this.restClient = restclient;
     }
@@ -31,8 +30,7 @@ public abstract class ViewBaseService {
                     .body(new ParameterizedTypeReference<>() {
                     });
 
-            assert entityList != null;
-            if (entityList.isEmpty()) {
+            if (entityList != null && entityList.isEmpty()) {
                 throw new EntityNotFound();
             }
 
@@ -137,8 +135,8 @@ public abstract class ViewBaseService {
                     .body(new ParameterizedTypeReference<>() {
                     });
 
-            assert entityList != null;
-            if (entityList.isEmpty()) {
+
+            if (entityList != null && entityList.isEmpty()) {
                 throw new EntityNotFound();
             }
 
