@@ -1,7 +1,6 @@
 package pjatk.edu.pl.pokemon_client.service;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
@@ -11,12 +10,9 @@ import java.util.List;
 
 @Service
 public class ViewMoveService extends ViewBaseService {
-    private final RestClient restClient;
-    private static final Logger logger = LoggerFactory.getLogger(ViewMoveService.class);
 
-    public ViewMoveService(RestClient restClient) {
-        super(restClient);
-        this.restClient = restClient;
+    public ViewMoveService(RestClient restClient, Logger viewMoveServiceLogger) {
+        super(restClient, viewMoveServiceLogger);
     }
 
     public List<Move> getAllMoves() {

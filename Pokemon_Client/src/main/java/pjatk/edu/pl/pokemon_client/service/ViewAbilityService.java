@@ -1,5 +1,6 @@
 package pjatk.edu.pl.pokemon_client.service;
 
+import org.slf4j.Logger;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
@@ -10,8 +11,8 @@ import java.util.List;
 @Service
 public class ViewAbilityService extends ViewBaseService {
 
-    public ViewAbilityService(RestClient restClient) {
-        super(restClient);
+    public ViewAbilityService(RestClient restClient, Logger viewAbilityServiceLogger) {
+        super(restClient, viewAbilityServiceLogger);
     }
 
     public List<Ability> getAllAbilities() {

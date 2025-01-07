@@ -1,7 +1,7 @@
 package pjatk.edu.pl.pokemon_client.service;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -14,10 +14,11 @@ import java.util.List;
 @Service
 public abstract class ViewBaseService {
     private final RestClient restClient;
-    private static final Logger logger = LoggerFactory.getLogger(ViewBaseService.class);
+    private final Logger logger;
 
-    protected ViewBaseService(RestClient restclient) {
-        this.restClient = restclient;
+    public ViewBaseService(RestClient restClient, @Qualifier("viewBaseServiceLogger") Logger logger) {
+        this.restClient = restClient;
+        this.logger = logger;
     }
 
     protected <T> List<T> getAllEntities(String url) {
@@ -36,6 +37,7 @@ public abstract class ViewBaseService {
 
         } catch (Exception e) {
             logger.error("Failed to get all entities. {}", String.valueOf(e));
+            throw e;
         }
         logger.info("Successfully got all entities");
         return entityList;
@@ -43,7 +45,6 @@ public abstract class ViewBaseService {
 
     protected <T> List<T> getAllEntitiesOfRelationById(String url, ParameterizedTypeReference<List<T>> typeReference, String logContext) {
         logger.info("Fetching all entities for {}", logContext);
-
         List<T> entityList = null;
         try {
             entityList = restClient.get()
@@ -60,7 +61,6 @@ public abstract class ViewBaseService {
             logger.error("Failed to fetch entities for {}. Error: {}", logContext, e.getMessage());
             throw e;
         }
-
         logger.info("Successfully fetched {} entities for {}", entityList.size(), logContext);
         return entityList;
     }
@@ -117,17 +117,15 @@ public abstract class ViewBaseService {
                     .body(typeReference);
             logger.info("Successfully got entity by field, using value {}.", field);
             return entity;
-
         } catch (Exception e) {
             logger.error("Failed to get entity by field. Using value {}. {}", field, String.valueOf(e));
-            throw e;
+            return null;
         }
     }
 
     protected <T> List<T> getEntityListByField(String url, Object field) {
         logger.info("Attempting to get all entities by field. Using value: {}", field);
-        List<T> entityList;
-
+        List<T> entityList = null;
         try {
             entityList = restClient.get()
                     .uri(url)
@@ -135,11 +133,9 @@ public abstract class ViewBaseService {
                     .body(new ParameterizedTypeReference<>() {
                     });
 
-
             if (entityList != null && entityList.isEmpty()) {
                 throw new EntityNotFound();
             }
-
         } catch (Exception e) {
             logger.error("Failed to get entities by field. Using value {}. {}", field, String.valueOf(e));
             throw e;
