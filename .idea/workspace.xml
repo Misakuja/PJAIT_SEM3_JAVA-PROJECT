@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd197a0d-43af-483a-a60c-0b3b5e4f5a9c" name="Changes" comment="Unit Tests added for Server module">
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/AbilityServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/BaseServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/ItemServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/MoveServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/PokemonServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_API/src/test/java/pjatk/edu/pl/pokemon_api/TypeServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/config/ViewLoggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -19,16 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/AbilityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/MoveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/PokemonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/service/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/config/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_API/src/main/java/pjatk/edu/pl/pokemon_api/config/LoggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Client/src/main/java/pjatk/edu/pl/pokemon_client/service/ViewBaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Integration/src/test/java/pjatk/edu/pl/pokemon_integration/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Integration/src/test/java/pjatk/edu/pl/pokemon_integration/DatabaseServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/client.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/client.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +127,7 @@
     "Gradle.Build Pokemon_Client.executor": "Run",
     "Gradle.Build Pokemon_Data.executor": "Run",
     "Gradle.Build Pokemon_Integration.executor": "Run",
+    "Gradle.DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository.executor": "Run",
     "Gradle.DeleteFormTest.deleteFormTest.executor": "Run",
     "Gradle.DisplayListTest.executor": "Run",
     "Gradle.FindByAccuracyFormTest.executor": "Run",
@@ -257,7 +245,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MoveServiceTest">
+  <component name="RunManager" selected="Gradle.DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository">
     <configuration name="AbilityServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -296,6 +284,30 @@
             <option value=":Pokemon_API:test" />
             <option value="--tests" />
             <option value="&quot;pjatk.edu.pl.pokemon_api.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Pokemon_Integration:test" />
+            <option value="--tests" />
+            <option value="&quot;pjatk.edu.pl.pokemon_integration.DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -354,30 +366,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Pokemon_Client" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":Pokemon_API:test" />
-            <option value="--tests" />
-            <option value="&quot;pjatk.edu.pl.pokemon_api.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="PokemonApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="PokeAPI.Pokemon_API.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pjatk.edu.pl.pokemon_api.PokemonApiApplication" />
@@ -423,9 +411,9 @@
     <list>
       <item itemvalue="Gradle.AbilityServiceTest" />
       <item itemvalue="Gradle.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest" />
+      <item itemvalue="Gradle.DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository" />
       <item itemvalue="Gradle.ItemServiceTest" />
       <item itemvalue="Gradle.MoveServiceTest" />
-      <item itemvalue="Gradle.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" />
       <item itemvalue="Spring Boot.PokemonApiApplication" />
       <item itemvalue="Spring Boot.PokemonClientApplication" />
       <item itemvalue="Spring Boot.PokemonDataApplication" />
@@ -435,11 +423,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DatabaseServiceTest.fetchAndSavePokemonsFetchesDataFromAPIAndSavesToRepository" />
         <item itemvalue="Gradle.MoveServiceTest" />
         <item itemvalue="Gradle.AbilityServiceTest" />
         <item itemvalue="Gradle.AbilityServiceTest.deleteAbilityCallsFindAllByAbilityIdTest" />
         <item itemvalue="Gradle.ItemServiceTest" />
-        <item itemvalue="Gradle.MoveServiceTest.deleteMoveCallsFindAllByMoveIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -697,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736283310852</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Unit Tests added for Server module">
+      <option name="closed" value="true" />
+      <created>1736292197629</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1736292197629</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
