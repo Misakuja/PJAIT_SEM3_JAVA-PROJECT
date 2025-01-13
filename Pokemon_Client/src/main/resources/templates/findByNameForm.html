@@ -13,35 +13,35 @@
 <div class="box">
     <form th:if="${entityType == 'Ability'}" action="#" th:action="@{/client/ability/find/name}" th:object="${ability}"
           method="POST">
-        <label for="abilityName">NAME:</label>
+        <label for="abilityName">Name:</label>
         <input type="text" id="abilityName" name="abilityName" th:field="*{name}"/>
         <input type="submit" id="abilitySubmit" value="Submit">
     </form>
 
     <form th:if="${entityType == 'Item'}" action="#" th:action="@{/client/item/find/name}" th:object="${item}"
           method="POST">
-        <label for="itemName">NAME:</label>
+        <label for="itemName">Name:</label>
         <input type="text" id="itemName" name="itemName" th:field="*{name}"/>
         <input type="submit" id="itemSubmit" value="Submit">
     </form>
 
     <form th:if="${entityType == 'Move'}" action="#" th:action="@{/client/move/find/name}" th:object="${move}"
           method="POST">
-        <label for="moveName">NAME:</label>
+        <label for="moveName">Name:</label>
         <input type="text" id="moveName" name="moveName" th:field="*{name}"/>
         <input type="submit" id="moveSubmit" value="Submit">
     </form>
 
     <form th:if="${entityType == 'Pokemon'}" action="#" th:action="@{/client/pokemon/find/name}" th:object="${pokemon}"
           method="POST">
-        <label for="pokemonName">NAME:</label>
+        <label for="pokemonName">Name:</label>
         <input type="text" id="pokemonName" name="pokemonName" th:field="*{name}"/>
         <input type="submit" id="pokemonSubmit" value="Submit">
     </form>
 
     <form th:if="${entityType == 'Type'}" action="#" th:action="@{/client/type/find/name}" th:object="${type}"
           method="POST">
-        <label for="typeName">NAME:</label>
+        <label for="typeName">Name:</label>
         <input type="text" id="typeName" name="typeName" th:field="*{name}"/>
         <input type="submit" id="typeSubmit" value="Submit">
     </form>

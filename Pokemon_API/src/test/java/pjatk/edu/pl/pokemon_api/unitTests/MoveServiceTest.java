@@ -1,4 +1,4 @@
-package pjatk.edu.pl.pokemon_api;
+package pjatk.edu.pl.pokemon_api.unitTests;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
